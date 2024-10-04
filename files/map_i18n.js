@@ -15,7 +15,7 @@ function getI18n(key, lang) {
 	var i18n = {
 		en: {
 			  maps: 'Maps'
-			, layers: 'TileLayer'
+			, layers: 'Forecast Weather'
 			, current: 'Current Weather'
 
 			, clouds: 'Clouds'
