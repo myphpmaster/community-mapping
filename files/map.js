@@ -269,7 +269,7 @@ function initMap() {
 	windrose.on('owmlayeradd', windroseAdded, windrose); // Add an event listener to get informed when windrose layer is ready
 
 	var useGeolocation = true;
-	var zoom = 8;
+	var zoom = 4;
 	var lat = 4.138;
 	var lon = 102.096;
 	var urlParams = getUrlParameters();
