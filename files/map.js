@@ -315,16 +315,16 @@ function initMap() {
 
 	var overlayMaps = {};
 	overlayMaps[getI18n('clouds', localLang)] = clouds;
-	overlayMaps[getI18n('cloudscls', localLang)] = cloudscls;
+	// overlayMaps[getI18n('cloudscls', localLang)] = cloudscls;
 	overlayMaps[getI18n('precipitation', localLang)] = precipitation;
-	overlayMaps[getI18n('precipitationcls', localLang)] = precipitationcls;
+	// overlayMaps[getI18n('precipitationcls', localLang)] = precipitationcls;
 	overlayMaps[getI18n('rain', localLang)] = rain;
-	overlayMaps[getI18n('raincls', localLang)] = raincls;
-	overlayMaps[getI18n('snow', localLang)] = snow;
+	// overlayMaps[getI18n('raincls', localLang)] = raincls;
+	// overlayMaps[getI18n('snow', localLang)] = snow;
 	overlayMaps[getI18n('temp', localLang)] = temp;
 	overlayMaps[getI18n('windspeed', localLang)] = wind;
 	overlayMaps[getI18n('pressure', localLang)] = pressure;
-	overlayMaps[getI18n('presscont', localLang)] = pressurecntr;
+	// overlayMaps[getI18n('presscont', localLang)] = pressurecntr;
 	overlayMaps[getI18n('city', localLang) + " (min Zoom 5)"] = city;
 	overlayMaps[getI18n('windrose', localLang)] = windrose;
 
