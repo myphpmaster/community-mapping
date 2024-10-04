@@ -269,7 +269,7 @@ function initMap() {
 	windrose.on('owmlayeradd', windroseAdded, windrose); // Add an event listener to get informed when windrose layer is ready
 
 	var useGeolocation = true;
-	var zoom = 8;
+	var zoom = 5;
 	var lat = 4.138;
 	var lon = 102.096;
 	var urlParams = getUrlParameters();
@@ -286,6 +286,8 @@ function initMap() {
 	});
 	map.attributionControl.setPrefix("");
 
+	
+/*
 	map.addControl(L.languageSelector({
 		languages: new Array(
 			L.langObject('en', 'English', 'mapicons/en.png')
@@ -303,6 +305,7 @@ function initMap() {
 		hideSelected: false,
 		vertical: false
 	}));
+*/
 
 	var baseMaps = {
 		"OSM Standard": standard
