@@ -280,12 +280,9 @@ async function initMap() {
 
 	var flood = L.imageOverlay(imageUrl, latLngBounds, {
 		opacity: 0.8,
-	/*	
 		errorOverlayUrl: errorOverlayUrl,
 		alt: altText,
 		interactive: true
-	*/
-
 	});
 
 	var useGeolocation = true;
