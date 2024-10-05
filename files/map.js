@@ -334,10 +334,7 @@ function initMap() {
 	overlayMaps[getI18n('city', localLang) + " (min Zoom 5)"] = city;
 	overlayMaps[getI18n('windrose', localLang)] = windrose;
 
-	L.control.layers(baseMaps).addTo(map);
-	var layerControl = L.control.layers(overlayMaps).addTo(map);
-
-	// var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 
 	map.addControl(new L.Control.Permalink({layers: layerControl, useAnchor: false, position: 'bottomright'}));
 
