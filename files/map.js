@@ -273,6 +273,18 @@ async function initMap() {
    			imageLoadingBgUrl: 'https://openweathermap.org/img/w0/iwind.png' });
 	windrose.on('owmlayeradd', windroseAdded, windrose); // Add an event listener to get informed when windrose layer is ready
 
+	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
+	var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+	var altText = 'Coastal Flooding for year 2100 in Malaysia';
+	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
+
+	var flood = L.imageOverlay(imageUrl, latLngBounds, {
+		opacity: 0.8,
+		errorOverlayUrl: errorOverlayUrl,
+		alt: altText,
+		interactive: true
+	});
+
 	var useGeolocation = true;
 	var zoom = 7;
 	var lat = 4.138;
@@ -349,18 +361,6 @@ async function initMap() {
 	var flooding = await loadFlooding();
 	layerControl.addOverlay(flooding, "Increased Flooding");
 	*/
-
-	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
-	var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-	var altText = 'Coastal Flooding for year 2100 in Malaysia';
-	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
-
-	var flood = L.imageOverlay(imageUrl, latLngBounds, {
-		opacity: 0.8,
-		errorOverlayUrl: errorOverlayUrl,
-		alt: altText,
-		interactive: true
-	});
 
 	/* ----
 	var weather = {
