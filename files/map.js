@@ -401,7 +401,14 @@ async function loadErosion() {
 		throw new Error('Failed to load GeoJSON data');
 	  }
 	  const data = await response.json();
-	  var getpoints = L.geoJSON(data);
+	  var getpoints = L.geoJSON(data, {
+		onEachFeature: function (feature, layer) {   
+			if (feature.properties && feature.properties.name) {
+				layer.bindPopup(features.properties.name)            
+		  
+			}
+		}
+	});
 	  return getpoints;
 	} catch (error) {
 	  console.error(error);
