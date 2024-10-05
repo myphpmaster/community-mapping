@@ -333,6 +333,7 @@ async function initMap() {
 	overlayMaps[getI18n('pressure', localLang)] = pressure;
 	// overlayMaps[getI18n('presscont', localLang)] = pressurecntr;
 	overlayMaps[getI18n('windrose', localLang)] = windrose;
+	overlayMaps[getI18n('flood', localLang)] = flood;
 
 	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 
@@ -344,8 +345,22 @@ async function initMap() {
 	var water_level = await loadWaterLevel();
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
+	/*
 	var flooding = await loadFlooding();
 	layerControl.addOverlay(flooding, "Increased Flooding");
+	*/
+
+	var imageUrl = 'https://maps.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
+	var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+	var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
+	var latLngBounds = L.latLngBounds([[40.799311, -74.118464], [40.68202047785919, -74.33]]);
+
+	var flood = L.imageOverlay(imageUrl, latLngBounds, {
+		opacity: 0.8,
+		errorOverlayUrl: errorOverlayUrl,
+		alt: altText,
+		interactive: true
+	});
 
 	/* ----
 	var weather = {
@@ -402,8 +417,12 @@ async function loadErosion() {
 	  }
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
-		style: function (feature) {
-			return feature.properties.style;
+		pointToLayer: function (feature, latlng) {
+		return new L.CircleMarker(latlng, {radius: 5, 
+			fillOpacity: 1, 
+			color: 'black', 
+			fillColor: feature.properties.marker-color, 
+			weight: 1,});
 		},
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup(feature.properties.name);
