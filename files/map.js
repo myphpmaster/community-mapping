@@ -358,7 +358,7 @@ async function initMap() {
 	});
 
 	var flooding = await loadFlooding();
-	layerControl.addOverlay(flood, "Increased Flooding");
+	layerControl.addOverlay(flooding, "Increased Flooding");
 
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
