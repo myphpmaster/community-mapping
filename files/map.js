@@ -336,12 +336,6 @@ function initMap() {
 
 	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 
-let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
-    layers: 'GDPS.ETA_TT',
-    version: '1.3.0',
-    opacity: 0.5,
-}).addTo(map);
-
 	map.addControl(new L.Control.Permalink({layers: layerControl, useAnchor: false, position: 'bottomright'}));
 
 	// patch layerControl to add some titles
