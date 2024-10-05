@@ -285,7 +285,7 @@ async function initMap() {
 		alt: altText,
 		interactive: true
 	*/
-	
+
 	});
 
 	var useGeolocation = true;
@@ -348,7 +348,7 @@ async function initMap() {
 	overlayMaps[getI18n('pressure', localLang)] = pressure;
 	// overlayMaps[getI18n('presscont', localLang)] = pressurecntr;
 	overlayMaps[getI18n('windrose', localLang)] = windrose;
-	overlayMaps[getI18n('flood', localLang)] = flood;
+	// overlayMaps[getI18n('flood', localLang)] = flood;
 
 	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 
@@ -360,10 +360,8 @@ async function initMap() {
 	var water_level = await loadWaterLevel();
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
-	/*
 	var flooding = await loadFlooding();
 	layerControl.addOverlay(flooding, "Increased Flooding");
-	*/
 
 	/* ----
 	var weather = {
