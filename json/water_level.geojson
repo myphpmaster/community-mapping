@@ -1,10 +1,363 @@
 {
     "type": "FeatureCollection",
     "name": "Rising Sea Levels",
-    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-    { "type": "Feature", "properties": { "id": "d1", "style": { "fill":"blue", "stroke-width":"3", "fill-opacity":0.6 } }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 102.184, 6.184 ], [ 102.354, 6.146 ], [ 102.387, 6.059 ], [ 102.426, 5.977 ], [ 102.437, 5.977 ] ] ] } },
-    { "type": "Feature", "properties": { "id": "d2", "style": { "fill":"blue", "stroke-width":"3", "fill-opacity":0.6 } }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 99.7153, 6.3583 ], [ 99.7222, 6.3351 ], [ 99.7181, 6.3133 ], [ 99.7174, 6.3078 ], [ 99.7105, 6.3105 ] ] ] } }
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Geting - 1.588m"
+        },
+        "geometry": {
+          "coordinates": [
+            102.10199889066291,
+            6.230268628914388
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Chendering - 2.136m"
+        },
+        "geometry": {
+          "coordinates": [
+            103.1829471344434,
+            5.263335427312555
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Tanjung Gelang - 1.969m"
+        },
+        "geometry": {
+          "coordinates": [
+            103.43513704476243,
+            3.961715021547249
+          ],
+          "type": "Point"
+        },
+        "id": 2
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Pulau Tioman - 1.882m"
+        },
+        "geometry": {
+          "coordinates": [
+            104.16373077101815,
+            2.829142729531796
+          ],
+          "type": "Point"
+        },
+        "id": 3
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Tanjung Sedili - 1.998m"
+        },
+        "geometry": {
+          "coordinates": [
+            104.12057164285238,
+            1.9274816086705755
+          ],
+          "type": "Point"
+        },
+        "id": 4
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Johor Bahru - 2.563m"
+        },
+        "geometry": {
+          "coordinates": [
+            103.795856874668,
+            1.4882103652669656
+          ],
+          "type": "Point"
+        },
+        "id": 5
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Kukup - 2.517m"
+        },
+        "geometry": {
+          "coordinates": [
+            103.4403788566791,
+            1.3315420165401974
+          ],
+          "type": "Point"
+        },
+        "id": 6
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Tanjung Keling - 2.051m"
+        },
+        "geometry": {
+          "coordinates": [
+            102.17662161500266,
+            2.2198410504642823
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Pelabuhan Klang - 3.096m"
+        },
+        "geometry": {
+          "coordinates": [
+            101.3910261555958,
+            2.996852620400489
+          ],
+          "type": "Point"
+        },
+        "id": 8
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Lumut - 2.142m"
+        },
+        "geometry": {
+          "coordinates": [
+            100.62647251728231,
+            4.239697931539126
+          ],
+          "type": "Point"
+        },
+        "id": 9
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Penang - 2.145m"
+        },
+        "geometry": {
+          "coordinates": [
+            100.33247623980719,
+            5.427060367779603
+          ],
+          "type": "Point"
+        },
+        "id": 10
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Langkawi - 2.422m"
+        },
+        "geometry": {
+          "coordinates": [
+            99.83667662238076,
+            6.321538619219496
+          ],
+          "type": "Point"
+        },
+        "id": 11
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Sejingkat - 3.009m"
+        },
+        "geometry": {
+          "coordinates": [
+            110.45608677505396,
+            1.6045645923767466
+          ],
+          "type": "Point"
+        },
+        "id": 12
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Bintulu - 1.3716m"
+        },
+        "geometry": {
+          "coordinates": [
+            113.03117913646304,
+            3.1824160591190918
+          ],
+          "type": "Point"
+        },
+        "id": 13
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Miri - 1.736m"
+        },
+        "geometry": {
+          "coordinates": [
+            113.98502988367744,
+            4.400040479520925
+          ],
+          "type": "Point"
+        },
+        "id": 14
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Labuan - 1.839m"
+        },
+        "geometry": {
+          "coordinates": [
+            115.23706536136012,
+            5.284275493418164
+          ],
+          "type": "Point"
+        },
+        "id": 15
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Kota Kinabalu - 1.847m"
+        },
+        "geometry": {
+          "coordinates": [
+            116.06886946551703,
+            5.979854214636276
+          ],
+          "type": "Point"
+        },
+        "id": 16
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Kudat - 1.874m"
+        },
+        "geometry": {
+          "coordinates": [
+            116.83242306573118,
+            6.878289166412969
+          ],
+          "type": "Point"
+        },
+        "id": 17
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Sandakan - 1.651m"
+        },
+        "geometry": {
+          "coordinates": [
+            118.1129195447582,
+            5.836152677953137
+          ],
+          "type": "Point"
+        },
+        "id": 18
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": " Lahad Datu - 1.956m"
+        },
+        "geometry": {
+          "coordinates": [
+            118.32131067418305,
+            5.0182144930557655
+          ],
+          "type": "Point"
+        },
+        "id": 19
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#008528",
+          "marker-size": "medium",
+          "marker-symbol": "circle",
+          "name": "Tawau - 2.407m"
+        },
+        "geometry": {
+          "coordinates": [
+            117.8963559906781,
+            4.24067197487085
+          ],
+          "type": "Point"
+        },
+        "id": 20
+      }
     ]
-    }
-    
+  }
