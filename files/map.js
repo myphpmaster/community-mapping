@@ -369,21 +369,22 @@ async function initMap() {
 
 	patch = L.DomUtil.create('div', 'leaflet-control-layers-separator');
 	layerControl._form.children[3].children[0].parentNode.insertBefore(patch, layerControl._form.children[3].children[layerControl._form.children[3].children.length-3]);
-	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 
+	patch = L.DomUtil.create('div', 'owm-layercontrol-header color-blue');
 	patch.innerHTML = getI18n('focus', localLang); // 'Project Focus';
 	layerControl._form.children[3].children[0].parentNode.insertBefore(patch, layerControl._form.children[3].children[layerControl._form.children[3].children.length-3]);
-	patch = L.DomUtil.create('div', 'owm-layercontrol-header color-blue');
 
+	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('maps', localLang); // 'Maps';
 	layerControl._form.children[0].parentNode.insertBefore(patch, layerControl._form.children[0]);
 
 	patch = L.DomUtil.create('div', 'leaflet-control-layers-separator');
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
-	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 
+	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('prefs', localLang); // 'Preferences';
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
+	
 	patch = L.DomUtil.create('div', '');
 	patch.innerHTML = '<div id="wheeldiv" onClick="toggleWheel(\'' + localLang + '\')"><img id="wheelimg" src="files/ScrollWheel20.png" align="middle" > <span id="wheeltxt">' + getI18n('scrollwheel', localLang) + ' ' + getI18n('on', localLang) + '</span></div>';
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
