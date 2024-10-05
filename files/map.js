@@ -338,6 +338,16 @@ function initMap() {
 
 	map.addControl(new L.Control.Permalink({layers: layerControl, useAnchor: false, position: 'bottomright'}));
 
+	var weather = {
+		Geomet: L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
+			layers: 'GDPS.ETA_TT',
+			version: '1.3.0',
+			opacity: 0.5,
+		})
+	};
+	
+	L.control.layers(weather).addTo(map);
+
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('layers', localLang); // 'TileLayers';
