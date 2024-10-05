@@ -346,15 +346,10 @@ async function initMap() {
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
 	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
-	var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-	var altText = 'Coastal Flooding for year 2100 in Malaysia';
 	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
 
 	var flood = L.imageOverlay(imageUrl, latLngBounds, {
-		opacity: 0.8,
-		errorOverlayUrl: errorOverlayUrl,
-		alt: altText,
-		interactive: true
+		opacity: 0.8
 	});
 
 	flood.addTo(map);
@@ -384,7 +379,7 @@ async function initMap() {
 	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('prefs', localLang); // 'Preferences';
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
-	
+
 	patch = L.DomUtil.create('div', '');
 	patch.innerHTML = '<div id="wheeldiv" onClick="toggleWheel(\'' + localLang + '\')"><img id="wheelimg" src="files/ScrollWheel20.png" align="middle" > <span id="wheeltxt">' + getI18n('scrollwheel', localLang) + ' ' + getI18n('on', localLang) + '</span></div>';
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
