@@ -320,6 +320,7 @@ async function initMap() {
 	};
 
 	var overlayMaps = {};
+	overlayMaps[getI18n('city', localLang)] = city;
 	overlayMaps[getI18n('clouds', localLang)] = clouds;
 	// overlayMaps[getI18n('cloudscls', localLang)] = cloudscls;
 	overlayMaps[getI18n('precipitation', localLang)] = precipitation;
@@ -331,7 +332,6 @@ async function initMap() {
 	overlayMaps[getI18n('windspeed', localLang)] = wind;
 	overlayMaps[getI18n('pressure', localLang)] = pressure;
 	// overlayMaps[getI18n('presscont', localLang)] = pressurecntr;
-	overlayMaps[getI18n('city', localLang) + " (min Zoom 5)"] = city;
 	overlayMaps[getI18n('windrose', localLang)] = windrose;
 
 	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);

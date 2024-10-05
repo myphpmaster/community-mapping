@@ -31,7 +31,7 @@ function getI18n(key, lang) {
 			, pressure: 'Pressure'
 			, presscont: 'Pressure Contour'
 
-			, city: 'Cities'
+			, city: 'Summary'
 			, windrose: 'Wind Rose'
 
 			, prefs: 'Preferences'
