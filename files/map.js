@@ -227,7 +227,7 @@ function toggleWheel(localLang) {
 /**
  * Initialize the map.
  */
-function initMap() {
+async function initMap() {
 
 	var standard = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
