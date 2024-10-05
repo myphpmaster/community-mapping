@@ -170,7 +170,7 @@
         "properties": {
           "id": 10,
           "name": "Kemaman, Terengganu",
-          "marker-color": "#ff0000",
+          "color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
         },
