@@ -362,22 +362,6 @@ async function initMap() {
 	var flooding = await loadFlooding();
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
-	/* ----
-	var weather = {
-		Geomet: L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
-			layers: 'GDPS.ETA_TT',
-			version: '1.3.0',
-			opacity: 0.5
-		}),
-		TopoOSM: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
-    		layers: 'TOPO-OSM-WMS',
-			opacity: 0.5
-		})
-
-	};	
-	L.control.layers(weather).addTo(map);
-	*/
-
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('layers', localLang); // 'Forecast Weather';
@@ -417,12 +401,8 @@ async function loadErosion() {
 	  }
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
-		pointToLayer: function (feature, latlng) {
-		return new L.CircleMarker(latlng, {radius: 5, 
-			fillOpacity: 1, 
-			color: 'black',
-			fillColor: feature.properties.marker-color, 
-			weight: 1,});
+		style: function (feature) {
+			return feature.properties.style;
 		},
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup(feature.properties.name);
