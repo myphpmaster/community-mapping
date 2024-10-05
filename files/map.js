@@ -278,12 +278,14 @@ async function initMap() {
 	var altText = 'Coastal Flooding for year 2100 in Malaysia';
 	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
 
+/*
 	var flood = L.imageOverlay(imageUrl, latLngBounds, {
 		opacity: 0.8,
 		errorOverlayUrl: errorOverlayUrl,
 		alt: altText,
 		interactive: true
 	});
+*/
 
 	var useGeolocation = true;
 	var zoom = 7;
