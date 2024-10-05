@@ -402,11 +402,11 @@ async function loadErosion() {
 	  }
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
-		onEachFeature: function (feature, layer) {   
-			if (feature.properties && feature.properties.name) {
-				layer.bindPopup(features.properties.name)            
-		  
-			}
+		style: function (feature) {
+			return feature.properties.style;
+		},
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup(feature.properties.name);
 		}
 	});
 	  return getpoints;
