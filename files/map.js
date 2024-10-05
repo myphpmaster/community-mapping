@@ -373,7 +373,7 @@ async function initMap() {
 
 	patch.innerHTML = getI18n('focus', localLang); // 'Project Focus';
 	layerControl._form.children[3].children[0].parentNode.insertBefore(patch, layerControl._form.children[3].children[layerControl._form.children[3].children.length-3]);
-	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
+	patch = L.DomUtil.create('div', 'owm-layercontrol-header color-blue');
 
 	patch.innerHTML = getI18n('maps', localLang); // 'Maps';
 	layerControl._form.children[0].parentNode.insertBefore(patch, layerControl._form.children[0]);
