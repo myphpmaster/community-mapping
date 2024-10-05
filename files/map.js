@@ -343,7 +343,14 @@ function initMap() {
 			layers: 'GDPS.ETA_TT',
 			version: '1.3.0',
 			opacity: 0.5,
-		})
+		}),
+
+		Arcgis: L.esri.featureLayer({
+			url: "https://services3.arcgis.com/G1WwgjpwOa4JbyeG/arcgis/rest/services/Datensatz/FeatureServer",
+			style: function () {
+			  return { color: "#70ca49", weight: 2 };
+			}
+		  })
 	};
 	
 	L.control.layers(weather).addTo(map);
