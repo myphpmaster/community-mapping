@@ -357,6 +357,8 @@ async function initMap() {
 		interactive: true
 	});
 
+	flood.addTo(map);
+
 	var flooding = await loadFlooding();
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
