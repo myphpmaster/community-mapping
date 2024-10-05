@@ -17,6 +17,7 @@ function getI18n(key, lang) {
 			  maps: 'Maps'
 			, layers: 'Forecast Weather'
 			, current: 'Current Weather'
+			, focus: 'Project Focus'
 
 			, clouds: 'Clouds'
 			, cloudscls: 'Clouds (classic)'

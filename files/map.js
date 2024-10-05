@@ -365,13 +365,15 @@ async function initMap() {
 
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
-	patch.innerHTML = getI18n('layers', localLang); // 'TileLayers';
+	patch.innerHTML = getI18n('layers', localLang); // 'Forecast Weather';
 	layerControl._form.children[2].parentNode.insertBefore(patch, layerControl._form.children[2]);
 	patch = L.DomUtil.create('div', 'leaflet-control-layers-separator');
 	layerControl._form.children[3].children[0].parentNode.insertBefore(patch, layerControl._form.children[3].children[layerControl._form.children[3].children.length-2]);
 	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('current', localLang); // 'Current Weather';
 	layerControl._form.children[3].children[0].parentNode.insertBefore(patch, layerControl._form.children[3].children[layerControl._form.children[3].children.length-2]);
+	patch.innerHTML = getI18n('focus', localLang); // 'Project Focus';
+	layerControl._form.children[3].children[0].parentNode.insertBefore(patch, layerControl._form.children[3].children[layerControl._form.children[3].children.length-3]);
 	patch = L.DomUtil.create('div', 'owm-layercontrol-header');
 	patch.innerHTML = getI18n('maps', localLang); // 'Maps';
 	layerControl._form.children[0].parentNode.insertBefore(patch, layerControl._form.children[0]);
