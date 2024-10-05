@@ -420,7 +420,6 @@ async function loadErosion() {
 		pointToLayer: function (feature, latlng) {
 		return new L.CircleMarker(latlng, {radius: 5, 
 			fillOpacity: 1, 
-			color: 'black', 
 			fillColor: feature.properties.marker-color, 
 			weight: 1,});
 		},
