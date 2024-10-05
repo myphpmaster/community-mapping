@@ -343,6 +343,10 @@ function initMap() {
 			layers: 'GDPS.ETA_TT',
 			version: '1.3.0',
 			opacity: 0.5
+		}),
+		TopoOSM: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
+    		layers: 'TOPO-OSM-WMS',
+			opacity: 0.5
 		})
 
 	};
