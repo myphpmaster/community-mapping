@@ -231,12 +231,17 @@ function initMap() {
 
 	var standard = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors</a>'
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
 		});
 
 	var humanitarian = L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 		maxZoom: 17,
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors</a> <a href="https://www.hotosm.org/" target="_blank">Tiles courtesy of Humanitarian OpenStreetMap Team</a>'
+		});
+
+	var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 		});
 
 	var esri = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg", {
@@ -308,8 +313,9 @@ function initMap() {
 */
 
 	var baseMaps = {
-		"OSM Standard": standard
-		, "OSM Humanitarian": humanitarian
+		"Standard": standard
+		, "Humanitarian": humanitarian
+		, "Satellite": satellite
 	//	, "ESRI Aerial": esri
 	};
 
@@ -328,7 +334,11 @@ function initMap() {
 	overlayMaps[getI18n('city', localLang) + " (min Zoom 5)"] = city;
 	overlayMaps[getI18n('windrose', localLang)] = windrose;
 
-	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+	L.control.layers(baseMaps).addTo(map);
+	var layerControl = L.control.layers(overlayMaps).addTo(map);
+
+	// var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+
 	map.addControl(new L.Control.Permalink({layers: layerControl, useAnchor: false, position: 'bottomright'}));
 
 	// patch layerControl to add some titles
