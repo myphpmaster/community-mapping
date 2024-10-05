@@ -338,6 +338,15 @@ function initMap() {
 
 	map.addControl(new L.Control.Permalink({layers: layerControl, useAnchor: false, position: 'bottomright'}));
 
+	var erosion = await loadErosion(); 
+	layerControl.addOverlay(erosion, "Coastal Erosion");
+	
+	var water_level = await loadWaterLevel();
+	layerControl.addOverlay(water_level, "Rising Sea Levels");
+
+	var flooding = await loadFlooding();
+	layerControl.addOverlay(flooding, "Increased Flooding");
+
 	/* ----
 	var weather = {
 		Geomet: L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
@@ -378,5 +387,47 @@ function initMap() {
 
 	if (useGeolocation && typeof navigator.geolocation != "undefined") {
 		navigator.geolocation.getCurrentPosition(foundLocation);
+	}
+}
+
+async function loadErosion() {
+	try {
+	  const response = await fetch('./json/erosion.geojson');
+	  if (!response.ok) {
+		throw new Error('Failed to load GeoJSON data');
+	  }
+	  const data = await response.json();
+	  var getpoints = L.geoJSON(data);
+	  return getpoints;
+	} catch (error) {
+	  console.error(error);
+	}
+}
+
+async function loadWaterLevel() {
+	try {
+	  const response = await fetch('./json/water_level.geojson');
+	  if (!response.ok) {
+		throw new Error('Failed to load GeoJSON data');
+	  }
+	  const data = await response.json();
+	  var getpoints = L.geoJSON(data);
+	  return getpoints;
+	} catch (error) {
+	  console.error(error);
+	}
+}
+
+async function loadFlooding() {
+	try {
+	  const response = await fetch('./json/flood.geojson');
+	  if (!response.ok) {
+		throw new Error('Failed to load GeoJSON data');
+	  }
+	  const data = await response.json();
+	  var getpoints = L.geoJSON(data);
+	  return getpoints;
+	} catch (error) {
+	  console.error(error);
 	}
 }
