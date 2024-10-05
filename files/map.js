@@ -400,7 +400,7 @@ async function loadErosion() {
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
 		style: function (feature) {
-			return {color: feature.properties.color};
+			return {color: "red"};
 		},
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup(feature.properties.name);
