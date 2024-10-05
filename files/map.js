@@ -422,7 +422,14 @@ async function loadWaterLevel() {
 		throw new Error('Failed to load GeoJSON data');
 	  }
 	  const data = await response.json();
-	  var getpoints = L.geoJSON(data);
+	  var getpoints = L.geoJSON(data, {
+		style: function (feature) {
+			return feature.properties.style;
+		},
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup(feature.properties.name);
+		}
+	});
 	  return getpoints;
 	} catch (error) {
 	  console.error(error);
@@ -436,7 +443,14 @@ async function loadFlooding() {
 		throw new Error('Failed to load GeoJSON data');
 	  }
 	  const data = await response.json();
-	  var getpoints = L.geoJSON(data);
+	  var getpoints = L.geoJSON(data, {
+		style: function (feature) {
+			return feature.properties.style;
+		},
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup(feature.properties.name);
+		}
+	});
 	  return getpoints;
 	} catch (error) {
 	  console.error(error);
