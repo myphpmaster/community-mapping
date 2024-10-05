@@ -350,10 +350,10 @@ async function initMap() {
 	layerControl.addOverlay(flooding, "Increased Flooding");
 	*/
 
-	var imageUrl = 'https://maps.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
+	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
 	var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-	var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
-	var latLngBounds = L.latLngBounds([[40.799311, -74.118464], [40.68202047785919, -74.33]]);
+	var altText = 'Coastal Flooding for year 2100 in Malaysia';
+	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
 
 	var flood = L.imageOverlay(imageUrl, latLngBounds, {
 		opacity: 0.8,
