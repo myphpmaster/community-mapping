@@ -417,11 +417,8 @@ async function loadErosion() {
 	  }
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
-		pointToLayer: function (feature, latlng) {
-		return new L.CircleMarker(latlng, {radius: 5, 
-			fillOpacity: 1, 
-			fillColor: feature.properties.marker-color, 
-			weight: 1,});
+		style: function (feature) {
+			return feature.properties.style;
 		},
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup(feature.properties.name);
