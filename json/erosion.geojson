@@ -247,9 +247,9 @@
         "type": "Feature",
         "properties": {
           "id": 13,
-          "name": "Rompin, Pahang",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
+          "name": "Cherating, Pahang",
+          "text": "The vulnerability levels for 18 management units along the Cherating-Pekan coast are classified into five vulnerability rankings: very low, low, moderate, high and very high, based on the rating values of the above mentioned parameters. The findings indicated that two areas, namely Tjg Payang - Sg Balok and Cheruk Paloh - Kuala Pahang were categorized as high vulnerability level with 97.22% and 91.67% respectively.<br/> <br/> <img src=\"https://i.ibb.co/kGX4JLx/chearting.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.sciencedirect.com/science/article/abs/pii/S0964569119301097",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -267,9 +267,9 @@
         "type": "Feature",
         "properties": {
           "id": 14,
-          "name": "Kuching, Sarawak",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
+          "name": "Labuan",
+          "text": "More than 20 beaches in this duty-free-island are facing erosion with two of them at a critical stage. Labuan Department of Irrigation and Drainage director Juniaddi Awang Tuah said one of the two is at Kg Sg Miri/Sg Pagar and the other the Labuan Crude Oil Terminal (LCOT) Kiamsam beach.<br/> <br/> <img src=\"https://i.ibb.co/Gcw4gpf/labuan.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.nst.com.my/news/nation/2022/07/813028/erosion-critical-two-labuan-beaches",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -277,8 +277,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            110.38925,
-            1.69062
+            115.19328162448573,
+            5.33475438159779
           ]
         },
         "id": 13
