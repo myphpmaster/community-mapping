@@ -408,9 +408,7 @@ async function loadErosion() {
 	  }
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
-		style: function (feature) {
-			return {color: "red"};
-		},
+		markersInheritOptions: true,
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup(feature.properties.name);			
 		}
@@ -462,9 +460,7 @@ async function loadFlooding() {
 	  }
 	  const data = await response.json();
 	  var getpoints = L.geoJSON(data, {
-		style: function (feature) {
-			return feature.properties.style;
-		},
+		style: {color: "red"},
 		onEachFeature: function (feature, layer) {
 			layer.bindPopup(feature.properties.name);
 		}
