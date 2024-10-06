@@ -291,8 +291,6 @@ async function initMap() {
 	});
 	map.attributionControl.setPrefix("");
 
-	
-/*
 	map.addControl(L.languageSelector({
 		languages: new Array(
 			L.langObject('en', 'English', 'mapicons/en.png')
@@ -310,7 +308,6 @@ async function initMap() {
 		hideSelected: false,
 		vertical: false
 	}));
-*/
 
 	var baseMaps = {
 		"Standard": standard
