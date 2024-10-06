@@ -27,7 +27,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Chendering, Terengganu",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.213-1.280 (Baseline)<br/><strong>2030:</strong> 1.226-1.316 <br/><strong>2050:</strong>  1.276-1.426<br/><strong>2100:</strong> 1.616-2.136"
         },
         "geometry": {
           "coordinates": [
@@ -45,7 +45,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Tanjung Gelang, Pahang",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.046-1.113 (Baseline)<br/><strong>2030:</strong> 1.059-1.149<br/><strong>2050:</strong>  1.149-1.309<br/><strong>2100:</strong> 1.449-1.969"
         },
         "geometry": {
           "coordinates": [
@@ -63,7 +63,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Pulau Tioman, Pahang",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.959-1.026 (Baseline)<br/><strong>2030:</strong> 0.972-1.062<br/><strong>2050:</strong>  1.062-1.222 <br/><strong>2100:</strong> 1.362-1.882"
         },
         "geometry": {
           "coordinates": [
@@ -81,7 +81,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Tanjung Sedili, Johor",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.075-1.119 (Baseline)<br/><strong>2030:</strong> 1.088-1.168<br/><strong>2050:</strong>  1.168-1.328 <br/><strong>2100:</strong> 1.478-1.998"
         },
         "geometry": {
           "coordinates": [
@@ -99,7 +99,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Johor Bahru, Johor",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.640-1.702 (Baseline)<br/><strong>2030:</strong> 1.653-1.733<br/><strong>2050:</strong>  1.733-1.893<br/><strong>2100:</strong> 2.043-2.563"
         },
         "geometry": {
           "coordinates": [
@@ -117,7 +117,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Kukup, Johor",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.604-1.666 (Baseline)<br/><strong>2030:</strong> 1.617-1.697<br/><strong>2050:</strong>  1.697-1.857<br/><strong>2100:</strong> 2.007-2.517"
         },
         "geometry": {
           "coordinates": [
@@ -135,7 +135,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Tanjung Keling, Melaka",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.148-1.210 (Baseline)<br/><strong>2030:</strong> 1.161-1.241 <br/><strong>2050:</strong>  1.241-1.401 <br/><strong>2100:</strong> 1.541-2.051"
         },
         "geometry": {
           "coordinates": [
@@ -153,7 +153,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Pelabuhan Klang, Selangor",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 2.203-2.265 (Baseline)<br/><strong>2030:</strong> 2.216-2.296<br/><strong>2050:</strong>  2.286-2.456 <br/><strong>2100:</strong> 2.586-3.096"
         },
         "geometry": {
           "coordinates": [
@@ -171,7 +171,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Lumut, Perak",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.259-1.321 (Baseline)<br/><strong>2030:</strong> 1.272-1.322<br/><strong>2050:</strong>  1.342-1.512<br/><strong>2100:</strong> 1.632-2.142"
         },
         "geometry": {
           "coordinates": [
@@ -189,7 +189,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Penang Island",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.252-1.314 (Baseline)<br/><strong>2030:</strong> 1.265-1.345<br/><strong>2050:</strong>  1.335-1.505<br/><strong>2100:</strong> 1.625-2.145"
         },
         "geometry": {
           "coordinates": [
@@ -207,7 +207,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Langkawi, Kedah",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.529-1.583 (Baseline)<br/><strong>2030:</strong> 1.542-1.622 <br/><strong>2050:</strong>  1.612-1.782<br/><strong>2100:</strong> 1.912-2.422"
         },
         "geometry": {
           "coordinates": [
@@ -225,7 +225,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Sejingkat, Sarawak",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 2.088-2.143 (Baseline)<br/><strong>2030:</strong> 2.099-2.179 <br/><strong>2050:</strong>  2.179-2.339<br/><strong>2100:</strong> 2.489-3.009"
         },
         "geometry": {
           "coordinates": [
@@ -243,7 +243,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Bintulu, Sarawak",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.795-0.850 (Baseline)<br/><strong>2030:</strong> 0.806-0.886 <br/><strong>2050:</strong> 0.886-1.046 <br/><strong>2100:</strong> 1.196-1.716"
         },
         "geometry": {
           "coordinates": [
@@ -261,7 +261,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Miri, Sarawak",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.815-0.870 (Baseline)<br/><strong>2030:</strong> 0.826-0.906<br/><strong>2050:</strong> 0.906-1.066 <br/><strong>2100:</strong> 1.216-1.736"
         },
         "geometry": {
           "coordinates": [
@@ -279,7 +279,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Labuan",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.901-0.963 (Baseline)<br/><strong>2030:</strong> 0.919-0.999<br/><strong>2050:</strong> 1.009-1.169<br/><strong>2100:</strong> 1.319-1.839"
         },
         "geometry": {
           "coordinates": [
@@ -297,7 +297,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Kota Kinabalu, Sabah",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.899-0.961 (Baseline)<br/><strong>2030:</strong> 0.917-0.997<br/><strong>2050:</strong> 1.007-1.167<br/><strong>2100:</strong> 1.317-1.847"
         },
         "geometry": {
           "coordinates": [
@@ -315,7 +315,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Kudat, Sabah",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.916-0.991 (Baseline)<br/><strong>2030:</strong> 0.934-1.024<br/><strong>2050:</strong> 1.024-1.184 <br/><strong>2100:</strong> 1.344-1.874"
         },
         "geometry": {
           "coordinates": [
@@ -333,7 +333,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Sandakan, Sabah",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 0.703-0.778 (Baseline)<br/><strong>2030:</strong> 0.721-0.811<br/><strong>2050:</strong> 0.811-0.971<br/><strong>2100:</strong> 1.131-1.651"
         },
         "geometry": {
           "coordinates": [
@@ -351,7 +351,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": " Lahad Datu, Sabah",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.016-1.086 (Baseline)<br/><strong>2030:</strong> 1.026-1.116 <br/><strong>2050:</strong> 1.116-1.276 <br/><strong>2100:</strong> 1.436-1.956"
         },
         "geometry": {
           "coordinates": [
@@ -369,7 +369,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Tawau, Sabah",
-          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
+          "text": "<strong>2022:</strong> 1.467-1.537 (Baseline)<br/><strong>2030:</strong> 1.477-1.567<br/><strong>2050:</strong> 1.567-1.727 <br/><strong>2100:</strong> 1.887-2.407"
         },
         "geometry": {
           "coordinates": [
