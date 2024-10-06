@@ -346,6 +346,10 @@ async function initMap() {
 	var water_level = await loadWaterLevel();
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
+	water_level.on('click', function(e) {
+		map.setView(e.latlng, 15);      
+  	});
+
 	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
 	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
 
