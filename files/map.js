@@ -342,19 +342,14 @@ async function initMap() {
 	var erosion = await loadErosion(); 
 	layerControl.addOverlay(erosion, "Coastal Erosion");
 
-	// change marker icon
-	const erosion_icon = new L.IconEx({
-		contentHtml: `<i class="fas fa-water"></i>`,
-		iconFill: "#00c",
-		contentColor: "#00c",
-	});
-	erosion.setIcon(erosion_icon);
-
 	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
 		map.setView(e.latlng, 10);      
   	});
 	
+	/**
+	 * Water Level menu
+	 */
 	var water_level = await loadWaterLevel();
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
@@ -362,6 +357,9 @@ async function initMap() {
 		map.setView(e.latlng, 11);      
   	});
 
+	/**
+	 * Flooding menu
+	 */
 	var flooding = await loadFlooding();
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
@@ -467,7 +465,8 @@ async function loadWaterLevel() {
 				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
 			}
 			layer.bindPopup(content);
-		}
+		},
+		pointToLayer: createCustomIcon
 	});
 	  return getpoints;
 	} catch (error) {
@@ -493,3 +492,28 @@ async function loadFlooding() {
 	  console.error(error);
 	}
 }
+
+/*
+ * Create a custom icon to use with a GeoJSON layer instead of the default blue
+ * marker. This snippet assumes the map object (map) and GeoJSON object
+ * (myLayerData) have already been declared.
+ */
+
+// replace Leaflet's default blue marker with a custom icon
+function createCustomIcon (feature, latlng) {
+	let myIcon = L.icon({
+	  iconUrl: 'my-icon.png',
+	  shadowUrl: 'my-icon.png',
+	  iconSize:     [25, 25], // width and height of the image in pixels
+	  shadowSize:   [35, 20], // width, height of optional shadow image
+	  iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location
+	  shadowAnchor: [12, 6],  // anchor point of the shadow. should be offset
+	  popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+	})
+	const iconEX = new L.IconEx({
+		contentHtml: `<i class="fas fa-house-user"></i>`,
+		iconFill: "#00c",
+		contentColor: "#00c",
+	});
+	return L.marker(latlng, { icon: iconEX })
+  }
