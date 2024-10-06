@@ -180,15 +180,15 @@
         "type": "Feature",
         "properties": {
           "id": 11,
-          "name": "Kukup, Johor",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": ""
+          "name": "Tanjung Piai, Johor",
+          "text": "Severe erosion is experienced at Tanjung Piai National Park, despite extensive coastal protection measures (eg sandbags in the photo), due to the movement of large container ship and tanker traffic less than three kilometers offshore.<br/> <br/> <img src=\"https://i.ibb.co/f4sLCvQ/kukup.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.researchgate.net/publication/258764052_Tropical_wetlands_and_REDD_Three_unique_scientific_challenges_for_policy"
         },
         "geometry": {
           "type": "Point",
           "coordinates": [
-            103.44096,
-            1.33549
+            103.5116,
+            1.2656
           ]
         },
         "id": 10
