@@ -44,6 +44,8 @@ function getI18n(key, lang) {
 			  maps: 'Mappe'
 			, layers: 'Livelli Meteo'
 			, current: 'Meteo Corrente'
+			, focus: 'Focus del Progetto'
+			, flood: 'Aumento delle Inondazioni'
 
 			, clouds: 'Nuvole'
 			, cloudscls: 'Nuvole (classico)'
@@ -69,6 +71,8 @@ function getI18n(key, lang) {
 			  maps: 'Karten'
 			, layers: 'Ebenen'
 			, current: 'Aktuelles Wetter'
+			, focus: 'Projektfokus'
+			, flood: 'Erhöhte Überschwemmungen'
 
 			, clouds: 'Wolken'
 			, cloudscls: 'Wolken (classic)'
@@ -94,6 +98,8 @@ function getI18n(key, lang) {
 			  maps: 'Carte'
 			, layers: 'Couches'
 			, current: 'Temps actuel'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'Nuage'
 			, cloudscls: 'Nuage (classique)'
@@ -119,6 +125,8 @@ function getI18n(key, lang) {
 			  maps: 'карта'
 			, layers: 'слой'
 			, current: 'текущая погода'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'о́блачность'
 			, cloudscls: 'о́блачность (класси́ческий)'
@@ -144,6 +152,8 @@ function getI18n(key, lang) {
 			  maps: 'Kaarten'
 			, layers: 'Lagen'
 			, current: 'Actuele Weer'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'Wolken'
 			, cloudscls: 'Wolken (classic)'
@@ -169,6 +179,8 @@ function getI18n(key, lang) {
 			  maps: 'Mapas'
 			, layers: 'Camadas'
 			, current: 'Meteorologia atual'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'Núvens'
 			, cloudscls: 'Núvens (clássico)'
@@ -194,6 +206,8 @@ function getI18n(key, lang) {
 			  maps: 'Mapas'
 			, layers: 'Láminas'
 			, current: 'Tiempo actual'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'Nubes'
 			, cloudscls: 'Nubes (classic)'
@@ -219,6 +233,8 @@ function getI18n(key, lang) {
 			  maps: 'Mapas'
 			, layers: 'Láminas'
 			, current: 'Tiempo actual'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'Nubes'
 			, cloudscls: 'Nubes (classic)'
@@ -244,6 +260,8 @@ function getI18n(key, lang) {
 		    maps: 'نقشه ها'
 			, layers: 'لایه ها'
 			, current: 'آب و هوای کنونی'
+			, focus: 'Project Focus'
+			, flood: 'Increased Flooding'
 
 			, clouds: 'ابر ها'
 			, cloudscls: 'ابر ها(کلاسیک)'

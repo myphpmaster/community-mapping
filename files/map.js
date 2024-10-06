@@ -339,6 +339,10 @@ async function initMap() {
 	var erosion = await loadErosion(); 
 	layerControl.addOverlay(erosion, "Coastal Erosion");
 	
+	erosion.on('click', function(e) {
+		map.setView(e.latlng, 16);      
+  	});
+	
 	var water_level = await loadWaterLevel();
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
@@ -398,7 +402,7 @@ async function loadErosion() {
 			return {color: "red"};
 		},
 		onEachFeature: function (feature, layer) {
-			layer.bindPopup(feature.properties.name);
+			layer.bindPopup(feature.properties.name);			
 		}
 	});
 	  return getpoints;
