@@ -428,7 +428,9 @@ async function loadWaterLevel() {
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
 			if(feature.properties.text){
+				content += '<strong>Sea Level Projection RCP8.5</strong><br/>';
 				content += '<p>' + feature.properties.text + '</p>';
+				content += '<p>* Datum: Land Survey Datum (LSD)</p>';
 			}
 			if(feature.properties.link){
 				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
