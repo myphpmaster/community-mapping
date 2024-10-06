@@ -423,7 +423,17 @@ async function loadWaterLevel() {
 			return feature.properties.style;
 		},
 		onEachFeature: function (feature, layer) {
-			layer.bindPopup('<strong>' + feature.properties.name + '</strong><p>' + feature.properties.text + '</p>');
+			var content
+			if(feature.properties.name){
+				content = '<strong>' + feature.properties.name + '</strong>';
+			}
+			if(feature.properties.text){
+				content += '<p>' + feature.properties.text + '</p>';
+			}
+			if(feature.properties.link){
+				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
+			}
+			layer.bindPopup(content);
 		}
 	});
 	  return getpoints;
