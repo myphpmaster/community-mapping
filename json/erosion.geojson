@@ -9,10 +9,7 @@
           "name": "Klang, Selangor",
           "text": "The coastal area of Klang at the eastern of Malaysia contains different types of land covers that are surrounded by the urban and mangroves areas. These areas are significant for environmental biodiversity. This article focuses on the erosion along the Kapar to Jeram coastal areas.<br/> <img src=\"https://i.ibb.co/ccL1W3X/klang.webp\" width=\"100%\" height=\"auto;\"/>",
           "link":"https://www.researchgate.net/publication/320037378_Temporal_Geospatial_Shorelines_Changes_Analysis_in_Klang_Coastal_Area",
-          "style": "{\"color\":\"red\",\"stroke-width\":\"3\",\"fill-opacity\":0.6}",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "style": "{\"color\":\"red\",\"stroke-width\":\"3\",\"fill-opacity\":0.6}"
         },
         "geometry": {
           "type": "Point",
@@ -29,10 +26,7 @@
           "id": 2,
           "name": "Port Dickson, Negeri Sembilan",
           "text": "In 2015, the coastline in Negeri Sembilan was recorded to have 10.2 km erosion, which is 17.59% of the total 58 km of coastline in the state. Regency Beach, located in Port Dickson, is one of the areas affected by erosion.<br/> <br/> <img src=\"https://i.ibb.co/m8kJt8R/pd.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://iopscience.iop.org/article/10.1088/1755-1315/498/1/012070",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://iopscience.iop.org/article/10.1088/1755-1315/498/1/012070"
         },
         "geometry": {
           "type": "Point",
@@ -49,10 +43,7 @@
           "id": 3,
           "name": "Sabak Bernam, Selangor",
           "text": "Nowadays, coastal zones are facing shoreline changes that stemming from natural and anthropogenic effect. The process of erosion and accretion will affect the physical environment of the shoreline. Therefore, the study of shoreline changes is important to identify the patterns of changes over time.<br/> <br/> <img src=\"https://i.ibb.co/Y7NwKQ3/sabak-bernam.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.researchgate.net/publication/317352475_Extraction_of_shoreline_changes_in_Selangor_coastal_area_using_GIS_and_remote_sensing_techniques",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.researchgate.net/publication/317352475_Extraction_of_shoreline_changes_in_Selangor_coastal_area_using_GIS_and_remote_sensing_techniques"
         },
         "geometry": {
           "type": "Point",
@@ -69,10 +60,7 @@
           "id": 4,
           "name": "Marang, Terengganu",
           "text": "The study of National Coastal Erosion Study (NCES) on 2015 revealed that 8840 km of shoreline in Malaysia with 1,347.6 km were subjected to erosion. The present study selected seven locations in Kuala Terengganu since Terengganu is exposed to the northeast monsoon which could potentially cause coastal erosion.<br/> <br/> <img src=\"https://i.ibb.co/XLPc3tJ/marang.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.researchgate.net/publication/334603864_MULTI_METHOD_ANALYSIS_FOR_IDENTIFYING_THE_SHORELINE_EROSION_DURING_NORTHEAST_MONSOON_SEASON",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.researchgate.net/publication/334603864_MULTI_METHOD_ANALYSIS_FOR_IDENTIFYING_THE_SHORELINE_EROSION_DURING_NORTHEAST_MONSOON_SEASON"
         },
         "geometry": {
           "type": "Point",
@@ -89,10 +77,7 @@
           "id": 5,
           "name": "Kuala Nerus, Terengganu",
           "text": "Coastal erosion and accretion are long-term process that may cause changes in shoreline and beach profiles. Due to erosion and accretion effects, most of the coastal areas in Malaysia are suffering from destruction of property especially at the coastal areas in east coast of Peninsular Malaysia.<br/> <br/> <img src=\"https://i.ibb.co/kHwbmSK/kuala-nerus-erosion.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.researchgate.net/publication/348375091_Effect_of_Erosion_and_Accretion_on_Beach_Profile_in_Kuala_Terengganu_Coastal_Areas",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.researchgate.net/publication/348375091_Effect_of_Erosion_and_Accretion_on_Beach_Profile_in_Kuala_Terengganu_Coastal_Areas"
         },
         "geometry": {
           "type": "Point",
@@ -109,10 +94,7 @@
           "id": 6,
           "name": "Pekan, Pahang",
           "text": "Coastal erosion is recognised as the permanent loss of land and habitats along the shoreline resulting in the changes of the coast. Thus, it is important to detect and monitor shoreline changes especially in Pahang coast by identifying the rate of shoreline erosion and accretion.<br/> <br/> <img src=\"https://i.ibb.co/3svpGmK/pekan.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.researchgate.net/publication/325875459_Impact_of_Shoreline_Changes_to_Pahang_Coastal_Area_by_using_Geospatial_Technology",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.researchgate.net/publication/325875459_Impact_of_Shoreline_Changes_to_Pahang_Coastal_Area_by_using_Geospatial_Technology"
         },
         "geometry": {
           "type": "Point",
@@ -129,10 +111,7 @@
           "id": 7,
           "name": "Miri, Sarawak",
           "text": "The coastal region of Miri City, Malaysia, in recent years has been excessively occupied by urbanization related to industrial development. The stress and changes in the climatic conditions in the region have induced changes in the shoreline over the last five decades.<br/> <br/> <img src=\"https://i.ibb.co/cFsMXw3/miri.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.sciencedirect.com/science/article/abs/pii/B978012810473600008X",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.sciencedirect.com/science/article/abs/pii/B978012810473600008X"
         },
         "geometry": {
           "type": "Point",
@@ -148,11 +127,8 @@
         "properties": {
           "id": 8,
           "name": "Sandakan, Sabah",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "text": "Selingan Island off Sandakan, Sabah is a famous turtle nesting ground and a part of the Turtle Islands Park (TIP) within the Coral Triangle region of Malaysia. This small island faces the serious problem of beach erosion that is reducing the turtle nesting area. Sabah Parks deployed stone revetments in 2005, followed by placement of reef balls at the southern part of the Selingan Island in 2007 for protecting the shoreline. <br/> <br/> <img src=\"https://i.ibb.co/1ZV5TGb/sandakan.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.researchgate.net/publication/329449977_Effect_of_artificial_structures_on_shoreline_profile_of_Selingan_Island_Sandakan_Sabah_Malaysia"
         },
         "geometry": {
           "type": "Point",
@@ -169,10 +145,7 @@
           "id": 9,
           "name": "Mersing, Johor",
           "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": ""
         },
         "geometry": {
           "type": "Point",
@@ -209,10 +182,7 @@
           "id": 11,
           "name": "Kukup, Johor",
           "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": ""
         },
         "geometry": {
           "type": "Point",
@@ -229,10 +199,7 @@
           "id": 12,
           "name": "Langkawi, Kedah",
           "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": ""
         },
         "geometry": {
           "type": "Point",
@@ -249,10 +216,7 @@
           "id": 13,
           "name": "Cherating, Pahang",
           "text": "The vulnerability levels for 18 management units along the Cherating-Pekan coast are classified into five vulnerability rankings: very low, low, moderate, high and very high, based on the rating values of the above mentioned parameters. The findings indicated that two areas, namely Tjg Payang - Sg Balok and Cheruk Paloh - Kuala Pahang were categorized as high vulnerability level with 97.22% and 91.67% respectively.<br/> <br/> <img src=\"https://i.ibb.co/kGX4JLx/chearting.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.sciencedirect.com/science/article/abs/pii/S0964569119301097",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.sciencedirect.com/science/article/abs/pii/S0964569119301097"
         },
         "geometry": {
           "type": "Point",
@@ -269,10 +233,7 @@
           "id": 14,
           "name": "Labuan",
           "text": "More than 20 beaches in this duty-free-island are facing erosion with two of them at a critical stage. Labuan Department of Irrigation and Drainage director Juniaddi Awang Tuah said one of the two is at Kg Sg Miri/Sg Pagar and the other the Labuan Crude Oil Terminal (LCOT) Kiamsam beach.<br/> <br/> <img src=\"https://i.ibb.co/Gcw4gpf/labuan.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.nst.com.my/news/nation/2022/07/813028/erosion-critical-two-labuan-beaches",
-          "marker-color": "#ff0000",
-          "marker-size": "medium",
-          "marker-symbol": "circle"
+          "link": "https://www.nst.com.my/news/nation/2022/07/813028/erosion-critical-two-labuan-beaches"
         },
         "geometry": {
           "type": "Point",
@@ -289,7 +250,7 @@
           "id": 15,
           "name": "Batu Pahat, Johor",
           "text": "In this study, ArcGIS and MIKE21 software is used to generate spatial model to identify the shoreline changes at Batu Pahat and projection the sea level rise of year 2020 and 2040, thus able to identify areas that will be flooded based on the predicted sea level rise data. <br/><br/><img src=\"https://i.ibb.co/vzLjv3W/batu-pahat.jpg\" width=\"100%\" height=\"auto;\"/>",
-          "link": "https://www.researchgate.net/publication/308854237_Determination_the_impact_of_sea_level_rise_to_shoreline_changes_using_GIS",
+          "link": "https://www.researchgate.net/publication/308854237_Determination_the_impact_of_sea_level_rise_to_shoreline_changes_using_GIS"
         },
         "geometry": {
           "type": "Point",
