@@ -440,7 +440,7 @@ async function loadWaterLevel() {
 			if(feature.properties.text){
 				content += '<strong>Sea Level Projection RCP8.5</strong><br/>';
 				content += '<p>' + feature.properties.text + '</p>';
-				content += '<p>*Datum: LSD.<br/>Unit: meter</p>';
+				content += '<p>* Datum: Land Survey Datum (LSD)<br/>Unit mesurement in meter</p>';
 			}
 			if(feature.properties.link){
 				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
