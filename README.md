@@ -66,8 +66,3 @@ No, we did not utilize any Artificial Intelligence (AI) tools or software in pre
 * [AstroWind](https://astrowind.vercel.app/)
 * [Vercel](https://vercel.com/)
 * [Github](https://github.com/)
-
-
-## Please help me
-
-* Translations for some languages are incomplete. Someone out there knowing the correct terms? Please look at `L.OWM.Utils.i18n[lang]`.
