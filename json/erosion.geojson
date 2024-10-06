@@ -7,7 +7,8 @@
         "properties": {
           "id": 1,
           "name": "Klang, Selangor",
-          "text": "testing",
+          "text": "<img src=\"https://i.ibb.co/ccL1W3X/klang.webp\" width=\"200px;\" height=\"auto;\"/>",
+          "link":"https://www.mdpi.com/2073-4441/13/13/1741",
           "style": "{\"color\":\"red\",\"stroke-width\":\"3\",\"fill-opacity\":0.6}",
           "marker-color": "#ff0000",
           "marker-size": "medium",
