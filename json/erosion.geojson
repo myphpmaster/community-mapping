@@ -198,8 +198,8 @@
         "properties": {
           "id": 12,
           "name": "Langkawi, Kedah",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": ""
+          "text": "High spatial resolution satellite imageries were used for the extraction of coastline and classification level of erosion rate along with the Pulau Tuba. The coastline data was extracted using two different methods known as Maximum Likelihood (ML) and On-Screen Digitizing (OSD) in the determination of the best approach of coastline detection from the Sentinel-2 data of the year 2016 and 2019.<br/> <br/> <img src=\"https://i.ibb.co/G9Hhk5t/langkawi.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://iopscience.iop.org/article/10.1088/1755-1315/620/1/012017"
         },
         "geometry": {
           "type": "Point",
