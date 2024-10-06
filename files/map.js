@@ -336,9 +336,21 @@ async function initMap() {
 
 	map.addControl(new L.Control.Permalink({layers: layerControl, useAnchor: false, position: 'bottomright'}));
 
+	/**
+	 * Coastal Erosion menu
+	 */
 	var erosion = await loadErosion(); 
 	layerControl.addOverlay(erosion, "Coastal Erosion");
 
+	// change marker icon
+	const erosion_icon = new L.IconEx({
+		contentHtml: `<i class="fas fa-water"></i>`,
+		iconFill: "#00c",
+		contentColor: "#00c",
+	});
+	erosion.setIcon(erosion_icon);
+
+	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
 		map.setView(e.latlng, 10);      
   	});
