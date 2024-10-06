@@ -13,7 +13,7 @@ https://myphpmaster.github.io/community-mapping/
 
 ## Final Project
 
-Please find out about details of this project on the [project website](https://myspaceapp-map.vercel.app/).
+Please find out about details of this project on the [project website](https://myspaceapp-map.vercel.app/ target="_blank").
 
 ## Project Details
 
