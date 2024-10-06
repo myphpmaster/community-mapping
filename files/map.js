@@ -350,6 +350,14 @@ async function initMap() {
 		map.setView(e.latlng, 15);      
   	});
 
+	var flooding = await loadFlooding();
+	layerControl.addOverlay(flooding, "Increased Flooding");
+
+	flooding.on('click', function(e) {
+		map.setView(e.latlng, 12);      
+  	});
+
+	/*
 	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
 	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
 
@@ -358,9 +366,7 @@ async function initMap() {
 	});
 
 	flood.addTo(map);
-
-	var flooding = await loadFlooding();
-	layerControl.addOverlay(flooding, "Increased Flooding");
+	*/
 
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
