@@ -144,8 +144,8 @@
         "properties": {
           "id": 9,
           "name": "Mersing, Johor",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": ""
+          "text": "The shoreline of Malaysia is exposed to threats of coastal erosion and a rise of sea level. The National Coastal Erosion Study, 2015 reported that 15% of an 8840 km shoreline is currently eroding, where one-third of those falls under the critical and significant categories that require structural protection. <br/> <br/> <img src=\"https://i.ibb.co/PTC1m9K/mersing.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.mdpi.com/2073-4441/13/13/1741"
         },
         "geometry": {
           "type": "Point",
@@ -161,8 +161,8 @@
         "properties": {
           "id": 10,
           "name": "Kemaman, Terengganu",
-          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
-          "link": "",
+          "text": "This study assesses coastal erosion management strategies along a monsoon-dominated coasts by evaluating the efficacy of coastal protection structures against the coast. To this end, we analysed 244 km of the coastline of Terengganu, a federal state located on the east coast of Peninsular Malaysia.<br/> <br/> <img src=\"https://i.ibb.co/wM9vjyJ/kemaman.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.sciencedirect.com/science/article/abs/pii/S0301479723001792",
           "color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
