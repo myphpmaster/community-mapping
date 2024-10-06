@@ -9,7 +9,7 @@
           "marker-size": "medium",
           "marker-symbol": "circle",
           "name": "Geting, Kelantan",
-          "text": "<strong>2022:</strong> 0.665-0.732(Baseline)<br/><strong>2030:</strong> 0.678-0.768m<br/><strong>2050:</strong> 0.758-0.918<br/><strong>2100:</strong> 1.068-1.588"
+          "text": "<strong>2022:</strong> 0.665-0.732 (Baseline)<br/><strong>2030:</strong> 0.678-0.768<br/><strong>2050:</strong> 0.758-0.918<br/><strong>2100:</strong> 1.068-1.588"
         },
         "geometry": {
           "coordinates": [
@@ -26,12 +26,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Chendering - 2.136m"
+          "name": "Chendering, Terengganu",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            103.1829471344434,
-            5.263335427312555
+            103.19,
+            5.27
           ],
           "type": "Point"
         },
@@ -43,12 +44,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Tanjung Gelang - 1.969m"
+          "name": "Tanjung Gelang, Pahang",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            103.43513704476243,
-            3.961715021547249
+            103.43,
+            3.98
           ],
           "type": "Point"
         },
@@ -60,12 +62,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Pulau Tioman - 1.882m"
+          "name": "Pulau Tioman, Pahang",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            104.16373077101815,
-            2.829142729531796
+            104.14,
+            2.81
           ],
           "type": "Point"
         },
@@ -77,12 +80,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Tanjung Sedili - 1.998m"
+          "name": "Tanjung Sedili, Johor",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            104.12057164285238,
-            1.9274816086705755
+            104.12,
+            1.93
           ],
           "type": "Point"
         },
@@ -94,12 +98,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Johor Bahru - 2.563m"
+          "name": "Johor Bahru, Johor",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            103.795856874668,
-            1.4882103652669656
+            103.79,
+            1.46
           ],
           "type": "Point"
         },
@@ -111,12 +116,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Kukup - 2.517m"
+          "name": "Kukup, Johor",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            103.4403788566791,
-            1.3315420165401974
+            103.44,
+            1.33
           ],
           "type": "Point"
         },
@@ -128,12 +134,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Tanjung Keling - 2.051m"
+          "name": "Tanjung Keling, Melaka",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            102.17662161500266,
-            2.2198410504642823
+            102.15,
+            2.22
           ],
           "type": "Point"
         },
@@ -145,12 +152,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Pelabuhan Klang - 3.096m"
+          "name": "Pelabuhan Klang, Selangor",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            101.3910261555958,
-            2.996852620400489
+            101.36,
+            3.05
           ],
           "type": "Point"
         },
@@ -162,12 +170,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Lumut - 2.142m"
+          "name": "Lumut, Perak",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            100.62647251728231,
-            4.239697931539126
+            100.61,
+            4.24
           ],
           "type": "Point"
         },
@@ -179,12 +188,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Penang - 2.145m"
+          "name": "Penang Island",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            100.33247623980719,
-            5.427060367779603
+            100.35,
+            5.42
           ],
           "type": "Point"
         },
@@ -196,12 +206,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Langkawi - 2.422m"
+          "name": "Langkawi, Kedah",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            99.83667662238076,
-            6.321538619219496
+            99.76,
+            6.43
           ],
           "type": "Point"
         },
@@ -213,12 +224,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Sejingkat - 3.009m"
+          "name": "Sejingkat, Sarawak",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            110.45608677505396,
-            1.6045645923767466
+            110.42,
+            1.58
           ],
           "type": "Point"
         },
@@ -230,12 +242,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Bintulu - 1.3716m"
+          "name": "Bintulu, Sarawak",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            113.03117913646304,
-            3.1824160591190918
+            113.06,
+            3.26
           ],
           "type": "Point"
         },
@@ -247,12 +260,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Miri - 1.736m"
+          "name": "Miri, Sarawak",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            113.98502988367744,
-            4.400040479520925
+            113.97,
+            4.40
           ],
           "type": "Point"
         },
@@ -264,12 +278,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Labuan - 1.839m"
+          "name": "Labuan",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            115.23706536136012,
-            5.284275493418164
+            115.25,
+            5.27
           ],
           "type": "Point"
         },
@@ -281,12 +296,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Kota Kinabalu - 1.847m"
+          "name": "Kota Kinabalu, Sabah",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            116.06886946551703,
-            5.979854214636276
+            116.07,
+            5.98
           ],
           "type": "Point"
         },
@@ -298,12 +314,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Kudat - 1.874m"
+          "name": "Kudat, Sabah",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            116.83242306573118,
-            6.878289166412969
+            116.84,
+            6.88
           ],
           "type": "Point"
         },
@@ -315,12 +332,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Sandakan - 1.651m"
+          "name": "Sandakan, Sabah",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            118.1129195447582,
-            5.836152677953137
+            118.07,
+            5.81
           ],
           "type": "Point"
         },
@@ -332,12 +350,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": " Lahad Datu - 1.956m"
+          "name": " Lahad Datu, Sabah",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            118.32131067418305,
-            5.0182144930557655
+            118.35,
+            5.02
           ],
           "type": "Point"
         },
@@ -349,12 +368,13 @@
           "marker-color": "#008528",
           "marker-size": "medium",
           "marker-symbol": "circle",
-          "name": "Tawau - 2.407m"
+          "name": "Tawau, Sabah",
+          "text": "<strong>2022:</strong> (Baseline)<br/><strong>2030:</strong> <br/><strong>2050:</strong>  <br/><strong>2100:</strong> "
         },
         "geometry": {
           "coordinates": [
-            117.8963559906781,
-            4.24067197487085
+            117.88,
+            4.23
           ],
           "type": "Point"
         },
