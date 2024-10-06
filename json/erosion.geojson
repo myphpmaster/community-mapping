@@ -28,7 +28,7 @@
         "properties": {
           "id": 2,
           "name": "Port Dickson, Negeri Sembilan",
-          "text": "In 2015, the coastline in Negeri Sembilan was recorded to have 10.2 km erosion, which is 17.59% of the total 58 km of coastline in the state. Regency Beach, located in Port Dickson, is one of the areas affected by erosion.<br/> <br/> <img src=\"https://i.ibb.co/CvSk0Hq/pd.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "text": "In 2015, the coastline in Negeri Sembilan was recorded to have 10.2 km erosion, which is 17.59% of the total 58 km of coastline in the state. Regency Beach, located in Port Dickson, is one of the areas affected by erosion.<br/> <br/> <img src=\"https://i.ibb.co/m8kJt8R/pd.jpg\" width=\"100%\" height=\"auto;\"/>",
           "link": "https://iopscience.iop.org/article/10.1088/1755-1315/498/1/012070",
           "marker-color": "#ff0000",
           "marker-size": "medium",
@@ -48,6 +48,8 @@
         "properties": {
           "id": 3,
           "name": "Sabak Bernam, Selangor",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -66,6 +68,8 @@
         "properties": {
           "id": 4,
           "name": "Marang, Terengganu",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -84,7 +88,7 @@
         "properties": {
           "id": 5,
           "name": "Kuala Nerus, Terengganu",
-          "text": "Coastal erosion and accretion are long-term process that may cause changes in shoreline and beach profiles. Due to erosion and accretion effects, most of the coastal areas in Malaysia are suffering from destruction of property especially at the coastal areas in east coast of Peninsular Malaysia.<br/> <br/> <img src=\"https://i.ibb.co/g3n0CGC/kuala-nerus-erosion.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "text": "Coastal erosion and accretion are long-term process that may cause changes in shoreline and beach profiles. Due to erosion and accretion effects, most of the coastal areas in Malaysia are suffering from destruction of property especially at the coastal areas in east coast of Peninsular Malaysia.<br/> <br/> <img src=\"https://i.ibb.co/kHwbmSK/kuala-nerus-erosion.jpg\" width=\"100%\" height=\"auto;\"/>",
           "link": "https://www.researchgate.net/publication/348375091_Effect_of_Erosion_and_Accretion_on_Beach_Profile_in_Kuala_Terengganu_Coastal_Areas",
           "marker-color": "#ff0000",
           "marker-size": "medium",
@@ -104,7 +108,7 @@
         "properties": {
           "id": 6,
           "name": "Pekan, Pahang",
-          "text": "Coastal erosion is recognised as the permanent loss of land and habitats along the shoreline resulting in the changes of the coast. Thus, it is important to detect and monitor shoreline changes especially in Pahang coast by identifying the rate of shoreline erosion and accretion.<br/> <br/> <img src=\"https://i.ibb.co/4VV6rg1/pekan.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "text": "Coastal erosion is recognised as the permanent loss of land and habitats along the shoreline resulting in the changes of the coast. Thus, it is important to detect and monitor shoreline changes especially in Pahang coast by identifying the rate of shoreline erosion and accretion.<br/> <br/> <img src=\"https://i.ibb.co/3svpGmK/pekan.jpg\" width=\"100%\" height=\"auto;\"/>",
           "link": "https://www.researchgate.net/publication/325875459_Impact_of_Shoreline_Changes_to_Pahang_Coastal_Area_by_using_Geospatial_Technology",
           "marker-color": "#ff0000",
           "marker-size": "medium",
@@ -124,6 +128,8 @@
         "properties": {
           "id": 7,
           "name": "Miri, Sarawak",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -142,6 +148,8 @@
         "properties": {
           "id": 8,
           "name": "Sandakan, Sabah",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -160,6 +168,8 @@
         "properties": {
           "id": 9,
           "name": "Mersing, Johor",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -178,6 +188,8 @@
         "properties": {
           "id": 10,
           "name": "Kemaman, Terengganu",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -196,6 +208,8 @@
         "properties": {
           "id": 11,
           "name": "Kukup, Johor",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -214,6 +228,8 @@
         "properties": {
           "id": 12,
           "name": "Langkawi, Kedah",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -232,6 +248,8 @@
         "properties": {
           "id": 13,
           "name": "Rompin, Pahang",
+          "text": "<br/> <br/> <img src=\"\" width=\"100%\" height=\"auto;\"/>",
+          "link": "",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -249,7 +267,9 @@
         "type": "Feature",
         "properties": {
           "id": 14,
-          "name": "Kuching, Sarawak",
+          "name": "Miri, Sarawak",
+          "text": "The coastal region of Miri City, Malaysia, in recent years has been excessively occupied by urbanization related to industrial development. The stress and changes in the climatic conditions in the region have induced changes in the shoreline over the last five decades.<br/> <br/> <img src=\"https://i.ibb.co/cFsMXw3/miri.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.sciencedirect.com/science/article/abs/pii/B978012810473600008X",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -257,8 +277,8 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            110.38925,
-            1.69062
+            113.96357790686267,
+            4.364270173632718
           ]
         },
         "id": 13
@@ -267,7 +287,9 @@
         "type": "Feature",
         "properties": {
           "id": 15,
-          "name": "Batu Pahat, Johor"
+          "name": "Batu Pahat, Johor",
+          "text": "In this study, ArcGIS and MIKE21 software is used to generate spatial model to identify the shoreline changes at Batu Pahat and projection the sea level rise of year 2020 and 2040, thus able to identify areas that will be flooded based on the predicted sea level rise data. <br/><br/><img src=\"https://i.ibb.co/vzLjv3W/batu-pahat.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.researchgate.net/publication/308854237_Determination_the_impact_of_sea_level_rise_to_shoreline_changes_using_GIS",
         },
         "geometry": {
           "type": "Point",
