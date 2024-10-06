@@ -84,6 +84,8 @@
         "properties": {
           "id": 5,
           "name": "Kuala Nerus, Terengganu",
+          "text": "Coastal erosion and accretion are long-term process that may cause changes in shoreline and beach profiles. Due to erosion and accretion effects, most of the coastal areas in Malaysia are suffering from destruction of property especially at the coastal areas in east coast of Peninsular Malaysia.<br/> <br/> <img src=\"https://i.ibb.co/g3n0CGC/kuala-nerus-erosion.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.researchgate.net/publication/348375091_Effect_of_Erosion_and_Accretion_on_Beach_Profile_in_Kuala_Terengganu_Coastal_Areas",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
@@ -102,6 +104,8 @@
         "properties": {
           "id": 6,
           "name": "Pekan, Pahang",
+          "text": "Coastal erosion is recognised as the permanent loss of land and habitats along the shoreline resulting in the changes of the coast. Thus, it is important to detect and monitor shoreline changes especially in Pahang coast by identifying the rate of shoreline erosion and accretion.<br/> <br/> <img src=\"https://i.ibb.co/4VV6rg1/pekan.jpg\" width=\"100%\" height=\"auto;\"/>",
+          "link": "https://www.researchgate.net/publication/325875459_Impact_of_Shoreline_Changes_to_Pahang_Coastal_Area_by_using_Geospatial_Technology",
           "marker-color": "#ff0000",
           "marker-size": "medium",
           "marker-symbol": "circle"
