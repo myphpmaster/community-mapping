@@ -496,12 +496,19 @@ async function loadFlooding() {
 			if(feature.properties.name){
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
+			if(feature.properties.title){
+				content += '<strong>' + feature.properties.title + '</strong><br/>';
+			} else {
+				content += '<strong>Coastal Erosion</strong><br/>';
+			}
 			if(feature.properties.text){
-				content += '<strong>Flooding Area</strong><br/>';
 				content += '<p>' + feature.properties.text + '</p>';
 			}
 			if(feature.properties.link){
 				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+			}
+			if(feature.properties.img){
+				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
 			}
 			layer.bindPopup(content);
 		},
