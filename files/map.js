@@ -462,7 +462,7 @@ async function loadWaterLevel() {
 				content += '<p>* Datum: Land Survey Datum (LSD)<br/>** Unit measurement in meter</p>';
 			}
 			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
+				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
 			}
 			layer.bindPopup(content);
 		},
