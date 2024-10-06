@@ -340,7 +340,7 @@ async function initMap() {
 	layerControl.addOverlay(erosion, "Coastal Erosion");
 
 	erosion.on('click', function(e) {
-		map.setView(e.latlng, 12);      
+		map.setView(e.latlng, 10);      
   	});
 	
 	var water_level = await loadWaterLevel();
@@ -354,7 +354,7 @@ async function initMap() {
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
 	flooding.on('click', function(e) {
-		map.setView(e.latlng, 12);      
+		map.setView(e.latlng, 10);      
   	});
 
 	/*
