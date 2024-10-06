@@ -499,7 +499,7 @@ async function loadFlooding() {
 			if(feature.properties.title){
 				content += '<strong>' + feature.properties.title + '</strong><br/>';
 			} else {
-				content += '<strong>Coastal Erosion</strong><br/>';
+				content += '<strong>Increased Flooding</strong><br/>';
 			}
 			if(feature.properties.text){
 				content += '<p>' + feature.properties.text + '</p>';
