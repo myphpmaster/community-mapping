@@ -425,7 +425,7 @@ async function loadWaterLevel() {
 		onEachFeature: function (feature, layer) {
 			var content
 			if(feature.properties.name){
-				content = '<strong>' + feature.properties.name + '</strong>';
+				content = '<h3>' + feature.properties.name + '</h3>';
 			}
 			if(feature.properties.text){
 				content += '<p>' + feature.properties.text + '</p>';
