@@ -429,10 +429,11 @@ async function loadErosion() {
 				content += '<p>' + feature.properties.text + '</p>';
 			}
 			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
+				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
 			}
 			layer.bindPopup(content);		
-		}
+		},
+		pointToLayer: erosionIcon
 	});
 	  return getpoints;
 	} catch (error) {
@@ -466,7 +467,7 @@ async function loadWaterLevel() {
 			}
 			layer.bindPopup(content);
 		},
-		pointToLayer: createCustomIcon
+		pointToLayer: waterIcon
 	});
 	  return getpoints;
 	} catch (error) {
@@ -484,8 +485,20 @@ async function loadFlooding() {
 	  var getpoints = L.geoJSON(data, {
 		style: {color: "red"},
 		onEachFeature: function (feature, layer) {
-			layer.bindPopup(feature.properties.name);
-		}
+			var content
+			if(feature.properties.name){
+				content = '<h3>' + feature.properties.name + '</h3>';
+			}
+			if(feature.properties.text){
+				content += '<strong>Flooding Area</strong><br/>';
+				content += '<p>' + feature.properties.text + '</p>';
+			}
+			if(feature.properties.link){
+				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+			}
+			layer.bindPopup(content);
+		},
+		pointToLayer: upIcon
 	});
 	  return getpoints;
 	} catch (error) {
@@ -493,27 +506,30 @@ async function loadFlooding() {
 	}
 }
 
-/*
- * Create a custom icon to use with a GeoJSON layer instead of the default blue
- * marker. This snippet assumes the map object (map) and GeoJSON object
- * (myLayerData) have already been declared.
- */
-
 // replace Leaflet's default blue marker with a custom icon
-function createCustomIcon (feature, latlng) {
-	let myIcon = L.icon({
-	  iconUrl: 'my-icon.png',
-	  shadowUrl: 'my-icon.png',
-	  iconSize:     [25, 25], // width and height of the image in pixels
-	  shadowSize:   [35, 20], // width, height of optional shadow image
-	  iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location
-	  shadowAnchor: [12, 6],  // anchor point of the shadow. should be offset
-	  popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
-	})
+function waterIcon (feature, latlng) {
 	const iconEX = new L.IconEx({
-		contentHtml: `<i class="fas fa-house-user"></i>`,
+		contentHtml: `<i class="fas fa-water"></i>`,
 		iconFill: "#00c",
 		contentColor: "#00c",
 	});
 	return L.marker(latlng, { icon: iconEX })
-  }
+}
+
+function upIcon (feature, latlng) {
+	const iconEX = new L.IconEx({
+		contentHtml: `<i class="fas fa-arrow-up"></i>`,
+		iconFill: "#ff1a1a",
+		contentColor: "#ff1a1a",
+	});
+	return L.marker(latlng, { icon: iconEX })
+}
+
+function erosionIcon (feature, latlng) {
+	const iconEX = new L.IconEx({
+		contentHtml: `<i class="fas fa-holly-berry"></i>`,
+		iconFill: "#339933",
+		contentColor: "#339933",
+	});
+	return L.marker(latlng, { icon: iconEX })
+}
