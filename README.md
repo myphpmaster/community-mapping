@@ -9,9 +9,7 @@ The importance of this project lies in its potential to guide adaptation strateg
 
 ## Project Demo
 
-An example map using many features of this library can be seen at [ahorn.lima-city.de/owm](https://ahorn.lima-city.de/owm/).
-Its "Wind Rose" overlay is an example of a user defined marker to give you an idea what can be achieved by user defined functions for markers.
-This map is available in the example directory, too.
+https://myphpmaster.github.io/community-mapping/
 
 ## Final Project
 
