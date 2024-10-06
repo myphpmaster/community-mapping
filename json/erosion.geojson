@@ -7,6 +7,7 @@
         "properties": {
           "id": 1,
           "name": "Klang, Selangor",
+          "text": "testing",
           "style": "{\"color\":\"red\",\"stroke-width\":\"3\",\"fill-opacity\":0.6}",
           "marker-color": "#ff0000",
           "marker-size": "medium",

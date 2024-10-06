@@ -347,7 +347,7 @@ async function initMap() {
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
 	water_level.on('click', function(e) {
-		map.setView(e.latlng, 15);      
+		map.setView(e.latlng, 11);      
   	});
 
 	var flooding = await loadFlooding();
@@ -410,7 +410,18 @@ async function loadErosion() {
 	  var getpoints = L.geoJSON(data, {
 		markersInheritOptions: true,
 		onEachFeature: function (feature, layer) {
-			layer.bindPopup(feature.properties.name);			
+			var content
+			if(feature.properties.name){
+				content = '<h3>' + feature.properties.name + '</h3>';
+			}
+			if(feature.properties.text){
+				content += '<strong>Coastal Erosion</strong><br/>';
+				content += '<p>' + feature.properties.text + '</p>';
+			}
+			if(feature.properties.link){
+				content += '<p><a href="' + feature.properties.link + '">Read more</p>';
+			}
+			layer.bindPopup(content);		
 		}
 	});
 	  return getpoints;
