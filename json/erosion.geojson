@@ -277,7 +277,7 @@
           "name": "Batu Pahat, Johor",
           "title": "Determination the impact of sea level rise to shoreline changes using GIS",
           "img": "https://i.ibb.co/vzLjv3W/batu-pahat.jpg",
-          "text": "Climate change, weather and the ozone depletion has a significant association with the sea level rise and the movement of sea water. While the behavior of the sea level rise affects the changes of shoreline through processes of accretion and erosion can be analyzed in a Geographic Information System (GIS) by measuring differences in past and present shoreline locations. In this study, ",
+          "text": "Climate change, weather and the ozone depletion has a significant association with the sea level rise and the movement of sea water. While the behavior of the sea level rise affects the changes of shoreline through processes of accretion and erosion can be analyzed in a Geographic Information System (GIS) by measuring differences in past and present shoreline locations. In this study, ArcGIS and MIKE21 ...",
           "link": "https://www.researchgate.net/publication/308854237_Determination_the_impact_of_sea_level_rise_to_shoreline_changes_using_GIS"
         },
         "geometry": {
