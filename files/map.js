@@ -442,6 +442,13 @@ async function loadErosion() {
 				content += '<div class="tabs">';
 				
 				content += '<div class="tab" id="erosion-tab-1"><div class="content">';
+				
+				if(feature.properties.title){
+					content += '<strong>' + feature.properties.title + '</strong><br/>';
+				} else {
+					content += '<strong>Coastal Erosion</strong><br/>';
+				}
+				
 				content += '<p>' + feature.properties.text + '</p>';
 
 				if(feature.properties.link){
@@ -455,19 +462,8 @@ async function loadErosion() {
 				content += '</div></div>';
 										
 				content += '<ul class="tabs-link">';					
-				content += '<li class="tab-link"> <a href="#erosion-tab-1"><span><strong>';
-
-				if(feature.properties.title){
-					content += feature.properties.title;
-				} else {
-					content += 'Coastal Erosion';
-				}
-
-				content += '</strong></span></a></li>';
-
-				content += '<li class="tab-link"> <a href="#erosion-tab-2"><span><strong>';
-				content += 'Image';
-				content += '</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#erosion-tab-1"><span><strong>Information</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#erosion-tab-2"><span><strong>Image</strong></span></a></li>';
 				
 				content += '</ul>';
 				content += '</div>';
