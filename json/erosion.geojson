@@ -256,9 +256,9 @@
         "properties": {
           "id": 14,
           "name": "Labuan",
-          "title": "",
+          "title": "Erosion critical at two Labuan beaches",
           "img": "https://i.ibb.co/Gcw4gpf/labuan.jpg",
-          "text": "More than 20 beaches in this duty-free-island are facing erosion with two of them at a critical stage. Labuan Department of Irrigation and Drainage director Juniaddi Awang Tuah said one of the two is at Kg Sg Miri/Sg Pagar and the other the Labuan Crude Oil Terminal (LCOT) Kiamsam beach.",
+          "text": "More than 20 beaches in this duty-free-island are facing erosion with two of them at a critical stage. Labuan Department of Irrigation and Drainage director Juniaddi Awang Tuah said one of the two is at Kg Sg Miri/Sg Pagar and the other the Labuan Crude Oil Terminal (LCOT) Kiamsam beach. \"Based on a national coastal erosion study conducted in 2015 which is still relevant until today, more than 20 coastal areas were projected would be hit by erosion ...",
           "link": "https://www.nst.com.my/news/nation/2022/07/813028/erosion-critical-two-labuan-beaches"
         },
         "geometry": {
@@ -275,9 +275,9 @@
         "properties": {
           "id": 15,
           "name": "Batu Pahat, Johor",
-          "title": "",
+          "title": "Determination the impact of sea level rise to shoreline changes using GIS",
           "img": "https://i.ibb.co/vzLjv3W/batu-pahat.jpg",
-          "text": "In this study, ArcGIS and MIKE21 software is used to generate spatial model to identify the shoreline changes at Batu Pahat and projection the sea level rise of year 2020 and 2040, thus able to identify areas that will be flooded based on the predicted sea level rise data.",
+          "text": "Climate change, weather and the ozone depletion has a significant association with the sea level rise and the movement of sea water. While the behavior of the sea level rise affects the changes of shoreline through processes of accretion and erosion can be analyzed in a Geographic Information System (GIS) by measuring differences in past and present shoreline locations. In this study, ",
           "link": "https://www.researchgate.net/publication/308854237_Determination_the_impact_of_sea_level_rise_to_shoreline_changes_using_GIS"
         },
         "geometry": {
