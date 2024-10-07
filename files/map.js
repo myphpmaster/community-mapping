@@ -344,7 +344,7 @@ async function initMap() {
 
 	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
-		map.setView(e.latlng, 10);  
+		map.setView(e.latlng, 6);  
 		
 		setTimeout(function() { 
 			var px = map.project(e.latlng); // find the pixel location on the map where the popup anchor is
@@ -361,7 +361,7 @@ async function initMap() {
 	layerControl.addOverlay(water_level, "Rising Sea Levels");
 
 	water_level.on('click', function(e) {
-		map.setView(e.latlng, 11);      
+		map.setView(e.latlng, 7);      
   	});
 
 	/**
@@ -371,7 +371,7 @@ async function initMap() {
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
 	flooding.on('click', function(e) {
-		map.setView(e.latlng, 10);      
+		map.setView(e.latlng, 6);      
   	});
 
 	/*
