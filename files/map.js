@@ -429,23 +429,63 @@ async function loadErosion() {
 	  var getpoints = L.geoJSON(data, {
 		markersInheritOptions: true,
 		onEachFeature: function (feature, layer) {
-			var content
+			var content;
+
 			if(feature.properties.name){
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
-			if(feature.properties.title){
-				content += '<strong>' + feature.properties.title + '</strong><br/>';
-			} else {
-				content += '<strong>Coastal Erosion</strong><br/>';
-			}
-			if(feature.properties.text){
+
+			/* Tab Content start here
+			*/
+			if(feature.properties.text && feature.properties.img){
+
+				content += '<div class="tabs">';
+				
+				content += '<div class="tab" id="erosion-tab-1"><div class="content">';
 				content += '<p>' + feature.properties.text + '</p>';
-			}
-			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
-			}
-			if(feature.properties.img){
+
+				if(feature.properties.link){
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+				}
+
+				content += '</div></div>';
+				
+				content += '<div class="tab" id="erosion-tab-2"><div class="content">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				content += '</div></div>';
+										
+				content += '<ul class="tabs-link">';					
+				content += '<li class="tab-link"> <a href="#erosion-tab-1"><span><strong>';
+
+				if(feature.properties.title){
+					content += feature.properties.title;
+				} else {
+					content += 'Coastal Erosion';
+				}
+
+				content += '</strong></span></a></li>';
+
+				content += '<li class="tab-link"> <a href="#erosion-tab-2"><span><strong>';
+				content += 'Image';
+				content += '</strong></span></a></li>';
+				
+				content += '</ul>';
+				content += '</div>';
+
+			} else {
+				
+				if(feature.properties.title){
+					content += '<strong>' + feature.properties.title + '</strong><br/>';
+				} else {
+					content += '<strong>Coastal Erosion</strong><br/>';
+				}
+				if(feature.properties.text){
+					content += '<p>' + feature.properties.text + '</p>';
+				}
+				if(feature.properties.img){
+					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				}	
+
 			}
 			layer.bindPopup(content);		
 		},
