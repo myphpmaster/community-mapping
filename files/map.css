@@ -33,7 +33,7 @@ Classes popup tabs
 */
 .tabs {
     position:relative;
-    min-height:200px;
+    min-height:250px;
     clear:both;
     margin:25px 0;
 }
