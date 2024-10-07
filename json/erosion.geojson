@@ -63,10 +63,10 @@
         "properties": {
           "id": 4,
           "name": "Marang, Terengganu",
-          "title": "Effect of Erosion and Accretion on Beach Profile",
+          "title": "Multi Method Analysis for Identifying the Shoreline Erosion During Northeast Monsoon Season",
           "img": "https://i.ibb.co/XLPc3tJ/marang.jpg",
-          "text": "The study of National Coastal Erosion Study (NCES) on 2015 revealed that 8840 km of shoreline in Malaysia with 1,347.6 km were subjected to erosion. The present study selected seven locations in Kuala Terengganu since Terengganu is exposed to the northeast monsoon which could potentially cause coastal erosion.",
-          "link": "https://www.researchgate.net/publication/334603864_MULTI_METHOD_ANALYSIS_FOR_IDENTIFYING_THE_SHORELINE_EROSION_DURING_NORTHEAST_MONSOON_SEASON"
+          "text": "The study of National Coastal Erosion Study (NCES) on 2015 revealed that 8840 km of shoreline in Malaysia with 1,347.6 km were subjected to erosion. The present study selected seven locations in Kuala Terengganu since Terengganu is exposed to the northeast monsoon which could potentially cause coastal erosion.<br/> <br/> <img src=\"https://i.ibb.co/XLPc3tJ/marang.jpg\" width=\"100%\" height=\"auto;\"/>",
+         "link": "https://www.researchgate.net/publication/334603864_MULTI_METHOD_ANALYSIS_FOR_IDENTIFYING_THE_SHORELINE_EROSION_DURING_NORTHEAST_MONSOON_SEASON"
         },
         "geometry": {
           "type": "Point",
@@ -82,6 +82,7 @@
         "properties": {
           "id": 5,
           "name": "Kuala Nerus, Terengganu",
+          "title": "Effect of Erosion and Accretion on Beach Profile in Kuala Terengganu Coastal Areas",
           "img": "https://i.ibb.co/kHwbmSK/kuala-nerus-erosion.jpg",
           "text": "Coastal erosion and accretion are long-term process that may cause changes in shoreline and beach profiles. Due to erosion and accretion effects, most of the coastal areas in Malaysia are suffering from destruction of property especially at the coastal areas in east coast of Peninsular Malaysia.",
           "link": "https://www.researchgate.net/publication/348375091_Effect_of_Erosion_and_Accretion_on_Beach_Profile_in_Kuala_Terengganu_Coastal_Areas"
@@ -100,6 +101,7 @@
         "properties": {
           "id": 6,
           "name": "Pekan, Pahang",
+          "title": "Impact of Shoreline Changes to Pahang Coastal Area by using Geospatial Technology",
           "img": "https://i.ibb.co/3svpGmK/pekan.jpg",
           "text": "Coastal erosion is recognised as the permanent loss of land and habitats along the shoreline resulting in the changes of the coast. Thus, it is important to detect and monitor shoreline changes especially in Pahang coast by identifying the rate of shoreline erosion and accretion.",
           "link": "https://www.researchgate.net/publication/325875459_Impact_of_Shoreline_Changes_to_Pahang_Coastal_Area_by_using_Geospatial_Technology"
@@ -118,8 +120,9 @@
         "properties": {
           "id": 7,
           "name": "Miri, Sarawak",
+          "title": "Evaluation of Decadal Shoreline Changes in the Coastal Region of Miri, Sarawak, Malaysia",
           "img": "https://i.ibb.co/cFsMXw3/miri.jpg",
-          "text": "The coastal region of Miri City, Malaysia, in recent years has been excessively occupied by urbanization related to industrial development. The stress and changes in the climatic conditions in the region have induced changes in the shoreline over the last five decades.",
+          "text": "The coastal region of Miri City, Malaysia, in recent years has been excessively occupied by urbanization related to industrial development. The stress and changes in the climatic conditions in the region have induced changes in the shoreline over the last five decades. In this study, the landuse/landcover changes along with spatial ...",
           "link": "https://www.sciencedirect.com/science/article/abs/pii/B978012810473600008X"
         },
         "geometry": {
@@ -136,8 +139,9 @@
         "properties": {
           "id": 8,
           "name": "Sandakan, Sabah",
+          "title": "Effect of artificial structures on shoreline profile of Selingan Island, Sandakan, Sabah, Malaysia",
           "img": "https://i.ibb.co/1ZV5TGb/sandakan.jpg",
-          "text": "Selingan Island off Sandakan, Sabah is a famous turtle nesting ground and a part of the Turtle Islands Park (TIP) within the Coral Triangle region of Malaysia. This small island faces the serious problem of beach erosion that is reducing the turtle nesting area. Sabah Parks deployed stone revetments in 2005, followed by placement of reef balls at the southern part of the Selingan Island in 2007 for protecting the shoreline.",
+          "text": "Selingan Island off Sandakan, Sabah is a famous turtle nesting ground and a part of the Turtle Islands Park (TIP) within the Coral Triangle region of Malaysia. This small island faces the serious problem of beach erosion that is reducing the turtle nesting area. Sabah Parks deployed stone revetments in 2005, followed by placement of reef balls at the southern part ...",
           "link": "https://www.researchgate.net/publication/329449977_Effect_of_artificial_structures_on_shoreline_profile_of_Selingan_Island_Sandakan_Sabah_Malaysia"
         },
         "geometry": {
@@ -154,8 +158,9 @@
         "properties": {
           "id": 9,
           "name": "Mersing, Johor",
+          "title": "Coastal Structures as Beach Erosion Control and Sea Level Rise Adaptation in Malaysia: A Review",
           "img": "https://i.ibb.co/PTC1m9K/mersing.jpg",
-          "text": "The shoreline of Malaysia is exposed to threats of coastal erosion and a rise of sea level. The National Coastal Erosion Study, 2015 reported that 15% of an 8840 km shoreline is currently eroding, where one-third of those falls under the critical and significant categories that require structural protection.",
+          "text": "The shoreline of Malaysia is exposed to threats of coastal erosion and a rise of sea level. The National Coastal Erosion Study, 2015 reported that 15% of an 8840 km shoreline is currently eroding, where one-third of those falls under the critical and significant categories that require structural protection. The Study of Sea Level Rise in Malaysia, 2017 presented a sea-level ...",
           "link": "https://www.mdpi.com/2073-4441/13/13/1741"
         },
         "geometry": {
@@ -172,6 +177,7 @@
         "properties": {
           "id": 10,
           "name": "Kemaman, Terengganu",
+          "title": "",
           "img": "https://i.ibb.co/wM9vjyJ/kemaman.jpg",
           "text": "This study assesses coastal erosion management strategies along a monsoon-dominated coasts by evaluating the efficacy of coastal protection structures against the coast. To this end, we analysed 244 km of the coastline of Terengganu, a federal state located on the east coast of Peninsular Malaysia.",
           "link": "https://www.sciencedirect.com/science/article/abs/pii/S0301479723001792",
@@ -193,6 +199,7 @@
         "properties": {
           "id": 11,
           "name": "Tanjung Piai, Johor",
+          "title": "",
           "img": "https://i.ibb.co/f4sLCvQ/kukup.jpg",
           "text": "Severe erosion is experienced at Tanjung Piai National Park, despite extensive coastal protection measures (eg sandbags in the photo), due to the movement of large container ship and tanker traffic less than three kilometers offshore.",
           "link": "https://www.researchgate.net/publication/258764052_Tropical_wetlands_and_REDD_Three_unique_scientific_challenges_for_policy"
@@ -211,6 +218,7 @@
         "properties": {
           "id": 12,
           "name": "Langkawi, Kedah",
+          "title": "",
           "img": "https://i.ibb.co/G9Hhk5t/langkawi.jpg",
           "text": "High spatial resolution satellite imageries were used for the extraction of coastline and classification level of erosion rate along with the Pulau Tuba. The coastline data was extracted using two different methods known as Maximum Likelihood (ML) and On-Screen Digitizing (OSD) in the determination of the best approach of coastline detection from the Sentinel-2 data of the year 2016 and 2019.",
           "link": "https://iopscience.iop.org/article/10.1088/1755-1315/620/1/012017"
@@ -229,6 +237,7 @@
         "properties": {
           "id": 13,
           "name": "Cherating, Pahang",
+          "title": "",
           "img": "https://i.ibb.co/kGX4JLx/chearting.jpg",
           "text": "The vulnerability levels for 18 management units along the Cherating-Pekan coast are classified into five vulnerability rankings: very low, low, moderate, high and very high, based on the rating values of the above mentioned parameters. The findings indicated that two areas, namely Tjg Payang - Sg Balok and Cheruk Paloh - Kuala Pahang were categorized as high vulnerability level with 97.22% and 91.67% respectively.",
           "link": "https://www.sciencedirect.com/science/article/abs/pii/S0964569119301097"
@@ -247,6 +256,7 @@
         "properties": {
           "id": 14,
           "name": "Labuan",
+          "title": "",
           "img": "https://i.ibb.co/Gcw4gpf/labuan.jpg",
           "text": "More than 20 beaches in this duty-free-island are facing erosion with two of them at a critical stage. Labuan Department of Irrigation and Drainage director Juniaddi Awang Tuah said one of the two is at Kg Sg Miri/Sg Pagar and the other the Labuan Crude Oil Terminal (LCOT) Kiamsam beach.",
           "link": "https://www.nst.com.my/news/nation/2022/07/813028/erosion-critical-two-labuan-beaches"
@@ -265,6 +275,7 @@
         "properties": {
           "id": 15,
           "name": "Batu Pahat, Johor",
+          "title": "",
           "img": "https://i.ibb.co/vzLjv3W/batu-pahat.jpg",
           "text": "In this study, ArcGIS and MIKE21 software is used to generate spatial model to identify the shoreline changes at Batu Pahat and projection the sea level rise of year 2020 and 2040, thus able to identify areas that will be flooded based on the predicted sea level rise data.",
           "link": "https://www.researchgate.net/publication/308854237_Determination_the_impact_of_sea_level_rise_to_shoreline_changes_using_GIS"
