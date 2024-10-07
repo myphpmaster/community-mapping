@@ -9,9 +9,11 @@ The importance of this project lies in its potential to guide adaptation strateg
 
 ## Project Demo
 
-https://myphpmaster.github.io/community-mapping/
+https://docs.google.com/presentation/d/1X-a4IgXZ-2M8zuTRScDErjaCBVP9A7wgbsiITU1FR6s/edit#slide=id.gd9c453428_0_16
 
 ## Final Project
+
+https://myphpmaster.github.io/community-mapping/
 
 Please find out about details of this project on the [project website](https://myspaceapp-map.vercel.app/).
 
