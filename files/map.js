@@ -477,7 +477,7 @@ async function loadWaterLevel() {
 				content += '<strong>Sea Level Projection RCP8.5</strong><br/>';
 				content += '<p>' + feature.properties.text + '</p>';
 				content += '<p>* Datum: Land Survey Datum (LSD)<br/>** Unit measurement in meter</p>';
-				content += '<p><strong><em>Source: National Water Research Institute of Malaysia (NAHRIM)</em></strong></p>';
+				content += '<p><strong><em>Source: <a href="https://mycoast.nahrim.gov.my/portal-main/photo-gallery-details?id=sealevelrise_malaysia" target="_blank">NAHRIM</a></em></strong></p>';
 			}
 			if(feature.properties.link){
 				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
