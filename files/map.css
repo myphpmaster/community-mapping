@@ -67,9 +67,8 @@ Classes popup tabs
     top:28px;
     left:0;
     right:0;
-    bottom:0;
-    padding:20px;
-    border:1px solid #ccc;
+    bottom:0;    
+	padding-top: 20px;
 }
 .tab:target {
     display: block;
