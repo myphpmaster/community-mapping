@@ -430,6 +430,7 @@ async function loadErosion() {
 		markersInheritOptions: true,
 		onEachFeature: function (feature, layer) {
 			var content;
+			var id = 0;
 
 			if(feature.properties.name){
 				content = '<h3>' + feature.properties.name + '</h3>';
@@ -441,14 +442,14 @@ async function loadErosion() {
 
 				content += '<div class="tabs">';
 				
-				content += '<div class="tab" id="erosion-tab-1"><div class="content">';
+				content += '<div class="tab" id="erosion' + id + '-tab-1"><div class="content">';
 				
 				if(feature.properties.title){
 					content += '<strong>' + feature.properties.title + '</strong><br/>';
 				} else {
 					content += '<strong>Coastal Erosion</strong><br/>';
 				}
-				
+
 				content += '<p>' + feature.properties.text + '</p>';
 
 				if(feature.properties.link){
@@ -457,13 +458,13 @@ async function loadErosion() {
 
 				content += '</div></div>';
 				
-				content += '<div class="tab" id="erosion-tab-2"><div class="content">';
+				content += '<div class="tab" id="erosion' + id + '-tab-2"><div class="content">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
 				content += '</div></div>';
 										
 				content += '<ul class="tabs-link">';					
-				content += '<li class="tab-link"> <a href="#erosion-tab-1"><span><strong>Information</strong></span></a></li>';
-				content += '<li class="tab-link"> <a href="#erosion-tab-2"><span><strong>Image</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-1"><span><strong>Information</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-2"><span><strong>Image</strong></span></a></li>';
 				
 				content += '</ul>';
 				content += '</div>';
@@ -483,7 +484,8 @@ async function loadErosion() {
 				}	
 
 			}
-			layer.bindPopup(content);		
+			layer.bindPopup(content);	
+			id++;	
 		},
 		pointToLayer: erosionIcon
 	});
