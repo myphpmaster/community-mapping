@@ -484,7 +484,10 @@ async function loadErosion() {
 				}	
 
 			}
-			layer.bindPopup(content, {className: "erosion-popup"});	
+			layer.bindPopup(content, {
+				className: "erosion-popup",
+				maxWidth: "auto"
+			});	
 			id++;	
 		},
 		pointToLayer: erosionIcon
