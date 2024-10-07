@@ -349,7 +349,7 @@ async function initMap() {
 		setTimeout(function() { 
 
 			var px = map.project(e.latlng); // find the pixel location on the map where the popup anchor is
-			px.y -= e.target._popup._container.clientHeight/2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+			px.y -= e.target.style.height/2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
 			map.panTo(map.unproject(px),{animate: true}); // pan to new center
 
 		}, 500);
@@ -484,10 +484,9 @@ async function loadErosion() {
 				}	
 
 			}
-			layer.bindPopup(content);	
+			layer.bindPopup(content, {className: "erosion-popup"});	
 			id++;	
 		},
-		className: 'erosion-popup',
 		pointToLayer: erosionIcon
 	});
 	  return getpoints;
