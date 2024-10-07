@@ -7,8 +7,9 @@
         "properties": {
           "id": 1,
           "name": "Klang, Selangor",
+          "title": "Temporal Geospatial Shorelines Changes Analysis in Klang Coastal Area",
           "img": "https://i.ibb.co/ccL1W3X/klang.webp",
-          "text": "The coastal area of Klang at the eastern of Malaysia contains different types of land covers that are surrounded by the urban and mangroves areas.",
+          "text": "The coastal area of Klang at the eastern of Malaysia contains different types of land covers that are surrounded by the urban and mangroves areas. These areas are significant for environmental biodiversity. This article focuses on the erosion along the Kapar to Jeram coastal areas. The purpose of this study is to monitor the 41 years of shoreline changes using satellite imageries from 1974 to 2015 (Landsat TM and ETM+).",
           "link":"https://www.researchgate.net/publication/320037378_Temporal_Geospatial_Shorelines_Changes_Analysis_in_Klang_Coastal_Area",
           "style": "{\"color\":\"red\",\"stroke-width\":\"3\",\"fill-opacity\":0.6}"
         },
@@ -26,8 +27,9 @@
         "properties": {
           "id": 2,
           "name": "Port Dickson, Negeri Sembilan",
+          "title": "Composition of particle size at Regency Beach, Port Dickson",
           "img": "https://i.ibb.co/m8kJt8R/pd.jpg",
-          "text": "In 2015, the coastline in Negeri Sembilan was recorded to have 10.2 km erosion, which is 17.59% of the total 58 km of coastline in the state. Regency Beach, located in Port Dickson, is one of the areas affected by erosion.",
+          "text": "In 2015, the coastline in Negeri Sembilan was recorded to have 10.2 km erosion, which is 17.59% of the total 58 km of coastline in the state. Regency Beach, located in Port Dickson, is one of the areas affected by erosion. This preliminary study was conducted to determine the sediment distribution along the coast of Regency Beach. Nine (9) sampling points were identified starting from the lowest water line up to 40 meters inland, over 800 m along the coast.",
           "link": "https://iopscience.iop.org/article/10.1088/1755-1315/498/1/012070"
         },
         "geometry": {
@@ -46,7 +48,7 @@
           "name": "Sabak Bernam, Selangor",
           "title": "Extraction of shoreline changes in Selangor coastal area",
           "img": "https://i.ibb.co/Y7NwKQ3/sabak-bernam.jpg",
-          "text": "Nowadays, coastal zones are facing shoreline changes that stemming from natural and anthropogenic effect. The process of erosion and accretion will affect the physical environment of the shoreline.",
+          "text": "Nowadays, coastal zones are facing shoreline changes that stemming from natural and anthropogenic effect. The process of erosion and accretion will affect the physical environment of the shoreline. Therefore, the study of shoreline changes is important to identify the patterns of changes over time. The rapid growth of technology nowadays has facilitated the study of shoreline changes.",
           "link": "https://www.researchgate.net/publication/317352475_Extraction_of_shoreline_changes_in_Selangor_coastal_area_using_GIS_and_remote_sensing_techniques"
         },
         "geometry": {
