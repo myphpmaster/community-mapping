@@ -347,13 +347,12 @@ async function initMap() {
 		map.setView(e.latlng, 10);  
 		
 		setTimeout(function() { 
-
 			var px = map.project(e.latlng); // find the pixel location on the map where the popup anchor is
-			px.y -= e.target.style.height/2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+			px.y -= 125 // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
 			map.panTo(map.unproject(px),{animate: true}); // pan to new center
-
 		}, 500);
   	});
+	
 	
 	/**
 	 * Water Level menu
@@ -478,6 +477,9 @@ async function loadErosion() {
 				}
 				if(feature.properties.text){
 					content += '<p>' + feature.properties.text + '</p>';
+				}
+				if(feature.properties.link){
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
 				}
 				if(feature.properties.img){
 					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
