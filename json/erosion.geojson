@@ -177,7 +177,7 @@
         "properties": {
           "id": 10,
           "name": "Kemaman, Terengganu",
-          "title": "",
+          "title": "Adaptation of coastal defence structure as a mechanism to alleviate coastal erosion in monsoon dominated coast of Peninsular Malaysia",
           "img": "https://i.ibb.co/wM9vjyJ/kemaman.jpg",
           "text": "This study assesses coastal erosion management strategies along a monsoon-dominated coasts by evaluating the efficacy of coastal protection structures against the coast. To this end, we analysed 244 km of the coastline of Terengganu, a federal state located on the east coast of Peninsular Malaysia.",
           "link": "https://www.sciencedirect.com/science/article/abs/pii/S0301479723001792",
@@ -199,9 +199,9 @@
         "properties": {
           "id": 11,
           "name": "Tanjung Piai, Johor",
-          "title": "",
+          "title": "Tropical wetlands and REDD+: Three unique scientific challenges for policy",
           "img": "https://i.ibb.co/f4sLCvQ/kukup.jpg",
-          "text": "Severe erosion is experienced at Tanjung Piai National Park, despite extensive coastal protection measures (eg sandbags in the photo), due to the movement of large container ship and tanker traffic less than three kilometers offshore.",
+          "text": "The carbon sequestration and storage value of terrestrial habitats is now increasingly appreciated, and is the basis for Payment for Ecosystem Service (PES) policies such as REDD+. Tropical wetlands may be suitable for inclusion in such schemes because of the disproportionately large volume of carbon they are able to store. However, tropical wetlands offer a number of unique challenges ...",
           "link": "https://www.researchgate.net/publication/258764052_Tropical_wetlands_and_REDD_Three_unique_scientific_challenges_for_policy"
         },
         "geometry": {
