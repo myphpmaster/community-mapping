@@ -218,9 +218,9 @@
         "properties": {
           "id": 12,
           "name": "Langkawi, Kedah",
-          "title": "",
+          "title": "Geospatial Analysis of Coastline Erosion Along Pulau Tuba, Langkawi",
           "img": "https://i.ibb.co/G9Hhk5t/langkawi.jpg",
-          "text": "High spatial resolution satellite imageries were used for the extraction of coastline and classification level of erosion rate along with the Pulau Tuba. The coastline data was extracted using two different methods known as Maximum Likelihood (ML) and On-Screen Digitizing (OSD) in the determination of the best approach of coastline detection from the Sentinel-2 data of the year 2016 and 2019.",
+          "text": "The erosion in Malaysia has brought attention to many authorities especially the coastline in the eastern part of Peninsular Malaysia. Although the erosion in the northern part of Peninsular Malaysia does not receive as much attention as the eastern part of Peninsular Malaysia, however, the issue should not be neglected. High spatial resolution satellite imageries were used for the extraction of coastline ...",
           "link": "https://iopscience.iop.org/article/10.1088/1755-1315/620/1/012017"
         },
         "geometry": {
@@ -237,16 +237,16 @@
         "properties": {
           "id": 13,
           "name": "Cherating, Pahang",
-          "title": "",
+          "title": "Comprehensive coastal vulnerability assessment and adaptation for Cherating-Pekan coast, Pahang, Malaysia",
           "img": "https://i.ibb.co/kGX4JLx/chearting.jpg",
-          "text": "The vulnerability levels for 18 management units along the Cherating-Pekan coast are classified into five vulnerability rankings: very low, low, moderate, high and very high, based on the rating values of the above mentioned parameters. The findings indicated that two areas, namely Tjg Payang - Sg Balok and Cheruk Paloh - Kuala Pahang were categorized as high vulnerability level with 97.22% and 91.67% respectively.",
+          "text": "Climate change is having a profound impact on most coastal regions around the world. Sea Level Rise (SLR) has exposed the coastal regions to various threats, such as inundation and erosion, which consequently influence the coastal environments. The main objective of this study is to assess the coastal vulnerability index (CVI) of the Pahang coast.This CVI comprises six variables, i.e. coastal geomorphology, coastal slope, rate of erosion and accretion, ... ",
           "link": "https://www.sciencedirect.com/science/article/abs/pii/S0964569119301097"
         },
         "geometry": {
           "type": "Point",
           "coordinates": [
-            103.4775,
-            2.8169
+            103.3868,
+            4.1217
           ]
         },
         "id": 12
