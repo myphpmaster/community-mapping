@@ -441,7 +441,7 @@ async function loadErosion() {
 			if(feature.properties.text && feature.properties.img){
 
 				content += '<div class="tabs">';
-				
+
 				content += '<div class="tab" id="erosion' + id + '-tab-1"><div class="content">';
 				
 				if(feature.properties.title){
@@ -487,6 +487,7 @@ async function loadErosion() {
 			layer.bindPopup(content);	
 			id++;	
 		},
+		className: 'erosion-popup',
 		pointToLayer: erosionIcon
 	});
 	  return getpoints;
