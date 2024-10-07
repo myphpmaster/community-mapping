@@ -63,6 +63,9 @@ Classes popup tabs
     cursor:pointer;
 }
 .tab-link {
+    background:#e8eff5;
+}
+.tab-link:active {
     background:#f8f8f8;
 }
 .tab-link a {
