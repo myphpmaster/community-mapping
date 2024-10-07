@@ -23,9 +23,9 @@ html, body {
 .color-blue{
 	color: blue;
 }
+
 .erosion-popup {
 	min-width: 250px;
-
 }
 
 /*
@@ -64,6 +64,9 @@ Classes popup tabs
 }
 .tab-link {
     background:#f8f8f8;
+}
+.tab-link a {
+	text-decoration: none;	
 }
 .content {
     background:white;
