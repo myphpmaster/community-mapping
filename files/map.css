@@ -53,7 +53,7 @@ Classes popup tabs
 .tab-link {
     background:#eee;
     display: inline-block;
-    padding:10px;
+    padding: 5px 10px;
     border:1px solid #ccc;
     margin-left:-1px;
     position:relative;
@@ -71,10 +71,10 @@ Classes popup tabs
 .tab-link a {
 	text-decoration: none;	
 }
-.content {
+.tabs .content {
     background:white;
     position:absolute;
-    top:28px;
+    top:10px;
     left:0;
     right:0;
     bottom:0;    
