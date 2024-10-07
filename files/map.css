@@ -23,6 +23,10 @@ html, body {
 .color-blue{
 	color: blue;
 }
+.erosion-popup {
+	min-width: 250px;
+
+}
 
 /*
 Classes popup tabs
