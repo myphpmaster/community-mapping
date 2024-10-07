@@ -344,7 +344,15 @@ async function initMap() {
 
 	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
-		map.setView(e.latlng, 10);      
+		map.setView(e.latlng, 10);  
+		
+		setTimeout(function() { 
+			
+			var px = map.project(e.target._popup._latlng); // find the pixel location on the map where the popup anchor is
+			px.y -= e.target._popup._container.clientHeight/2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+			map.panTo(map.unproject(px),{animate: true}); // pan to new center
+
+		}, 5000);
   	});
 	
 	/**
@@ -409,14 +417,6 @@ async function initMap() {
 		navigator.geolocation.getCurrentPosition(foundLocation);
 	}
 
-	/**
-	 * Center map to popup cocntent
-	 */
-	map.on('popupopen', function(e) {
-		var px = map.project(e.target._popup._latlng); // find the pixel location on the map where the popup anchor is
-		px.y -= e.target._popup._container.clientHeight/2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
-		map.panTo(map.unproject(px),{animate: true}); // pan to new center
-	});
 }
 
 async function loadErosion() {
