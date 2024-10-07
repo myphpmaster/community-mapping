@@ -443,6 +443,10 @@ async function loadErosion() {
 				content += '<div class="tabs">';
 
 				content += '<div class="tab" id="erosion' + id + '-tab-1"><div class="content">';
+				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				content += '</div></div>';
+										
+				content += '<div class="tab" id="erosion' + id + '-tab-2"><div class="content">';
 				
 				if(feature.properties.title){
 					content += '<strong>' + feature.properties.title + '</strong><br/>';
@@ -458,13 +462,9 @@ async function loadErosion() {
 
 				content += '</div></div>';
 				
-				content += '<div class="tab" id="erosion' + id + '-tab-2"><div class="content">';
-				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
-				content += '</div></div>';
-										
 				content += '<ul class="tabs-link">';					
-				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-1"><span><strong>Information</strong></span></a></li>';
-				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-2"><span><strong>Image</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-1"><span><strong>Image</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-2"><span><strong>Information</strong></span></a></li>';
 				
 				content += '</ul>';
 				content += '</div>';
