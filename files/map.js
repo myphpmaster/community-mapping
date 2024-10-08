@@ -344,13 +344,7 @@ async function initMap() {
 
 	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
-		map.setView(e.latlng, 6);  
-		
-		setTimeout(function() { 
-			var px = map.project(e.latlng); // find the pixel location on the map where the popup anchor is
-			px.y -= 150 // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
-			map.panTo(map.unproject(px),{animate: true}); // pan to new center
-		}, 1000);
+		map.setView(e.latlng, 6);  		
   	});
 	
 
@@ -373,17 +367,6 @@ async function initMap() {
 	flooding.on('click', function(e) {
 		map.setView(e.latlng, 6);      
   	});
-
-	/*
-	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
-	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
-
-	var flood = L.imageOverlay(imageUrl, latLngBounds, {
-		opacity: 0.8
-	});
-
-	flood.addTo(map);
-	*/
 
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
