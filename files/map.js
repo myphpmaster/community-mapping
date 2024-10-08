@@ -545,25 +545,69 @@ async function loadFlooding() {
 	  var getpoints = L.geoJSON(data, {
 		style: {color: "red"},
 		onEachFeature: function (feature, layer) {
-			var content
+			var content;
+			var id = 0;
+
 			if(feature.properties.name){
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
-			if(feature.properties.title){
-				content += '<strong>' + feature.properties.title + '</strong><br/>';
-			} else {
-				content += '<strong>Increased Flooding</strong><br/>';
-			}
-			if(feature.properties.text){
-				content += '<p>' + feature.properties.text + '</p>';
-			}
-			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
-			}
-			if(feature.properties.img){
+
+			/* Tab Content start here
+			*/
+			if(feature.properties.text && feature.properties.img){
+
+				content += '<div class="tabs">';
+
+				content += '<div class="tab" id="flooding' + id + '-tab-1"><div class="content">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				content += '</div></div>';
+										
+				content += '<div class="tab" id="flooding' + id + '-tab-2"><div class="content">';
+				
+				if(feature.properties.title){
+					content += '<strong>' + feature.properties.title + '</strong><br/>';
+				} else {
+					content += '<strong>Increased Flooding</strong><br/>';
+				}
+
+				content += '<p>' + feature.properties.text + '</p>';
+
+				if(feature.properties.link){
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+				}
+
+				content += '</div></div>';
+				
+				content += '<ul class="tabs-link">';					
+				content += '<li class="tab-link"> <a href="#flooding' + id + '-tab-1"><span><strong>Image</strong></span></a></li>';
+				content += '<li class="tab-link"> <a href="#flooding' + id + '-tab-2"><span><strong>Information</strong></span></a></li>';
+				
+				content += '</ul>';
+				content += '</div>';
+
+			} else {
+				
+				if(feature.properties.title){
+					content += '<strong>' + feature.properties.title + '</strong><br/>';
+				} else {
+					content += '<strong>Increased Flooding</strong><br/>';
+				}
+				if(feature.properties.text){
+					content += '<p>' + feature.properties.text + '</p>';
+				}
+				if(feature.properties.link){
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+				}
+				if(feature.properties.img){
+					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				}	
+
 			}
-			layer.bindPopup(content);
+			layer.bindPopup(content, {
+				className: "flooding-popup",
+				maxWidth: "auto"
+			});	
+			id++;	
 		},
 		pointToLayer: upIcon
 	});
