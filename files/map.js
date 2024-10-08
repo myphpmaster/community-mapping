@@ -556,14 +556,19 @@ async function loadFlooding() {
 			*/
 			if(feature.properties.text && feature.properties.img){
 
-				content += '<div class="tabs">';
+				content += '<div class="tabx">';
+				content += '<button class="tablinks" onclick="openTab(event, \'flooding-' + id + '-tab-1\')">Image</button>';
+				content += '<button class="tablinks" onclick="openTab(event, \'flooding-' + id + '-tab-2\')">Information</button>';
+				content += '</div>';
 
-				content += '<div class="tab" id="flooding' + id + '-tab-1"><div class="content">';
+				// tab 1 - image content
+				content += '<div id="flooding-' + id + '-tab-1" class="tabcontent">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
-				content += '</div></div>';
-										
-				content += '<div class="tab" id="flooding' + id + '-tab-2"><div class="content">';
+				content += '</div>';
 				
+				// tab2 - text content
+				content += '<div id="flooding-' + id + '-tab-2" class="tabcontent">';
+								
 				if(feature.properties.title){
 					content += '<strong>' + feature.properties.title + '</strong><br/>';
 				} else {
@@ -576,15 +581,8 @@ async function loadFlooding() {
 					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
 				}
 
-				content += '</div></div>';
-				
-				content += '<ul class="tabs-link">';					
-				content += '<li class="tab-link"> <a href="#flooding' + id + '-tab-1"><span><strong>Image</strong></span></a></li>';
-				content += '<li class="tab-link"> <a href="#flooding' + id + '-tab-2"><span><strong>Information</strong></span></a></li>';
-				
-				content += '</ul>';
 				content += '</div>';
-
+				
 			} else {
 				
 				if(feature.properties.title){
@@ -644,3 +642,23 @@ function erosionIcon (feature, latlng) {
 	});
 	return L.marker(latlng, { icon: iconEX })
 }
+
+/*
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
+
+Tabs function
+*/
+
+function openTab(evt, id) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	  tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(id).style.display = "block";
+	evt.currentTarget.className += " active";
+  }
