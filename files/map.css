@@ -24,7 +24,8 @@ html, body {
 	color: blue;
 }
 
-.erosion-popup {
+.erosion-popup,
+.flooding-popup {
 	min-width: 300px;
 }
 
