@@ -651,7 +651,7 @@ function erosionIcon (feature, latlng) {
 		backgroundHtmlSize: [32, 40],
 		backgroundHtmlAnchor: [16, 20],
 		contentFontSize: 18,
-		contentHtml: `<i class="fas fa-holly-berry"></i>`,
+		contentHtml: `<i class="fas fa-wind"></i>`,
 		iconFill: "#a1a",
 	});
 	return L.marker(latlng, { icon: iconEX })
