@@ -639,6 +639,7 @@ function upIcon (feature, latlng) {
 
 function erosionIcon (feature, latlng) {
 	const iconEX = new L.IconEx({
+		// square
 		iconHtml: `
 <svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
 <path stroke-width="1" d="m 2.5,0.5 c -1.107998,0 -2,0.892002 -2,2 v 27 c 0,1.107998 0.892002,2 2,2 h 4.7044922 a 4.1676656,4.1676656 24.095192 0 1 3.1064288,1.38926 L 16,39.25 21.68908,32.88926 A 4.1676657,4.1676657 155.90481 0 1 24.795508,31.5 H 29.5 c 1.107998,0 2,-0.892002 2,-2 v -27 c 0,-1.107998 -0.892002,-2 -2,-2 z" />
@@ -651,6 +652,7 @@ function erosionIcon (feature, latlng) {
 		backgroundHtmlAnchor: [16, 20],
 		contentFontSize: 18,
 		contentHtml: `<i class="fas fa-holly-berry"></i>`,
+		iconFill: "#a1a",
 	});
 	return L.marker(latlng, { icon: iconEX })
 }
