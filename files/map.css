@@ -91,36 +91,39 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
 Style the tab 
 */
 .tabx {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tabx button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tabx button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tabx button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tabx button {
+      background-color: #ddd;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      transition: 0.3s;
+      border: 1px solid #ccc;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tabx button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tabx button.active {
+      background-color: #fff;
+      border-bottom: 1px solid #fff;
+      margin-bottom: -1px;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 16px 12px 10px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }

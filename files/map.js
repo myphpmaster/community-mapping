@@ -546,7 +546,6 @@ async function loadFlooding() {
 		style: {color: "red"},
 		onEachFeature: function (feature, layer) {
 			var content;
-			var id = 0;
 
 			if(feature.properties.name){
 				content = '<h3>' + feature.properties.name + '</h3>';
@@ -557,17 +556,17 @@ async function loadFlooding() {
 			if(feature.properties.text && feature.properties.img){
 
 				content += '<div class="tabx">';
-				content += '<button class="tablinks" onclick="openTab(event, \'flooding-' + id + '-tab-1\')">Image</button>';
-				content += '<button class="tablinks" onclick="openTab(event, \'flooding-' + id + '-tab-2\')">Information</button>';
+				content += '<button class="tablinks active" onclick="openTab(event, \'tab-1\')">Image</button>';
+				content += '<button class="tablinks" onclick="openTab(event, \'tab-2\')">Information</button>';
 				content += '</div>';
 
 				// tab 1 - image content
-				content += '<div id="flooding-' + id + '-tab-1" class="tabcontent">';
+				content += '<div id="tab-1" class="tabcontent" style="display: block;">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
 				content += '</div>';
 				
 				// tab2 - text content
-				content += '<div id="flooding-' + id + '-tab-2" class="tabcontent">';
+				content += '<div id="tab-2" class="tabcontent">';
 								
 				if(feature.properties.title){
 					content += '<strong>' + feature.properties.title + '</strong><br/>';
@@ -602,10 +601,9 @@ async function loadFlooding() {
 
 			}
 			layer.bindPopup(content, {
-				className: "flooding-popup no-" + (id+1),
+				className: "flooding-popup",
 				maxWidth: "auto"
 			});	
-			id++;	
 		},
 		pointToLayer: upIcon
 	});
