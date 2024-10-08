@@ -435,18 +435,23 @@ async function loadErosion() {
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
 
-			/* Tab Content start here
-			*/
 			if(feature.properties.text && feature.properties.img){
 
-				content += '<div class="tabs">';
+				/* Tab Content start here
+				*/
+				content += '<div class="tabx">';
+				content += '<button class="tablinks active" onclick="openTab(event, \'tab-1\')">Image</button>';
+				content += '<button class="tablinks" onclick="openTab(event, \'tab-2\')">Information</button>';
+				content += '</div>';
 
-				content += '<div class="tab" id="erosion' + id + '-tab-1"><div class="content">';
+				// tab 1 - image content
+				content += '<div id="tab-1" class="tabcontent" style="display: block;">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
-				content += '</div></div>';
-										
-				content += '<div class="tab" id="erosion' + id + '-tab-2"><div class="content">';
+				content += '</div>';
 				
+				// tab2 - text content
+				content += '<div id="tab-2" class="tabcontent">';
+								
 				if(feature.properties.title){
 					content += '<strong>' + feature.properties.title + '</strong><br/>';
 				} else {
@@ -459,15 +464,9 @@ async function loadErosion() {
 					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
 				}
 
-				content += '</div></div>';
-				
-				content += '<ul class="tabs-link">';					
-				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-1"><span><strong>Image</strong></span></a></li>';
-				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-2"><span><strong>Information</strong></span></a></li>';
-				
-				content += '</ul>';
 				content += '</div>';
-
+				/* Tab Content end here
+				*/
 			} else {
 				
 				if(feature.properties.title){
@@ -551,10 +550,10 @@ async function loadFlooding() {
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
 
-			/* Tab Content start here
-			*/
 			if(feature.properties.text && feature.properties.img){
 
+				/* Tab Content start here
+				*/
 				content += '<div class="tabx">';
 				content += '<button class="tablinks active" onclick="openTab(event, \'tab-1\')">Image</button>';
 				content += '<button class="tablinks" onclick="openTab(event, \'tab-2\')">Information</button>';
@@ -581,6 +580,8 @@ async function loadFlooding() {
 				}
 
 				content += '</div>';
+				/* Tab Content end here
+				*/
 				
 			} else {
 				
@@ -613,7 +614,11 @@ async function loadFlooding() {
 	}
 }
 
-// replace Leaflet's default blue marker with a custom icon
+/*
+* iconEX
+* Replace Leaflet's default blue marker with a custom icon
+* https://github.com/mfhsieh/leaflet-iconex
+*/
 function waterIcon (feature, latlng) {
 	const iconEX = new L.IconEx({
 		contentHtml: `<i class="fas fa-water"></i>`,
@@ -634,9 +639,17 @@ function upIcon (feature, latlng) {
 
 function erosionIcon (feature, latlng) {
 	const iconEX = new L.IconEx({
-		contentHtml: `<i class="fas fa-holly-berry"></i>`,
+		typeIcon: "template",
 		iconFill: "#339933",
+		iconHtmlTemplate: '<div class="square" style="background-color: #339933; border-color: #339933"></div>',
+		iconHtmlSize: [24, 24],
+		iconHtmlAnchor: [12, 24],
+		iconHtmlPopupAnchor: [0, -12],
+		backgroundHtml: "",
+		contentHtml: `<i class="fas fa-holly-berry"></i>`,
+		contentHtmlAnchor: [12, 12],
 		contentColor: "#339933",
+		contentFontSize: 16,
 	});
 	return L.marker(latlng, { icon: iconEX })
 }
