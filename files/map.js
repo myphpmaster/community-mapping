@@ -365,7 +365,7 @@ async function initMap() {
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
 	flooding.on('click', function(e) {
-		map.setView(e.latlng, 6);      
+		map.setView(e.latlng, 8);      
   	});
 
 	// patch layerControl to add some titles
