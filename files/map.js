@@ -602,7 +602,7 @@ async function loadFlooding() {
 
 			}
 			layer.bindPopup(content, {
-				className: "flooding-popup",
+				className: "flooding-popup-" + id,
 				maxWidth: "auto"
 			});	
 			id++;	
