@@ -344,7 +344,7 @@ async function initMap() {
 
 	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
-		map.setView(e.latlng, 6);  		
+		map.setView(e.latlng, 9);  		
   	});
 	
 
