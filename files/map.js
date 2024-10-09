@@ -273,7 +273,7 @@ async function initMap() {
    			imageLoadingBgUrl: 'https://openweathermap.org/img/w0/iwind.png' });
 	windrose.on('owmlayeradd', windroseAdded, windrose); // Add an event listener to get informed when windrose layer is ready
 
-	var useGeolocation = true;
+	var useGeolocation = false;
 	var zoom = 7;
 	var lat = 4.138;
 	var lon = 102.096;
@@ -344,13 +344,7 @@ async function initMap() {
 
 	// zoom-in when marker is clicked
 	erosion.on('click', function(e) {
-		map.setView(e.latlng, 6);  
-		
-		setTimeout(function() { 
-			var px = map.project(e.latlng); // find the pixel location on the map where the popup anchor is
-			px.y -= 150 // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
-			map.panTo(map.unproject(px),{animate: true}); // pan to new center
-		}, 1000);
+		map.setView(e.latlng, 9);  		
   	});
 	
 
@@ -371,19 +365,8 @@ async function initMap() {
 	layerControl.addOverlay(flooding, "Increased Flooding");
 
 	flooding.on('click', function(e) {
-		map.setView(e.latlng, 6);      
+		map.setView(e.latlng, 8);      
   	});
-
-	/*
-	var imageUrl = 'https://i.ibb.co/p0YnHg9/flooding.png';
-	var latLngBounds = L.latLngBounds([[ 98.4623, 7.3068], [ 119.4033, 1.1083]]);
-
-	var flood = L.imageOverlay(imageUrl, latLngBounds, {
-		opacity: 0.8
-	});
-
-	flood.addTo(map);
-	*/
 
 	// patch layerControl to add some titles
 	var patch = L.DomUtil.create('div', 'owm-layercontrol-header');
@@ -435,18 +418,23 @@ async function loadErosion() {
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
 
-			/* Tab Content start here
-			*/
 			if(feature.properties.text && feature.properties.img){
 
-				content += '<div class="tabs">';
+				/* Tab Content start here
+				*/
+				content += '<div class="tabx">';
+				content += '<button class="tablinks active" onclick="openTab(event, \'tab-1\')">Image</button>';
+				content += '<button class="tablinks" onclick="openTab(event, \'tab-2\')">Information</button>';
+				content += '</div>';
 
-				content += '<div class="tab" id="erosion' + id + '-tab-1"><div class="content">';
+				// tab 1 - image content
+				content += '<div id="tab-1" class="tabcontent" style="display: block;">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
-				content += '</div></div>';
-										
-				content += '<div class="tab" id="erosion' + id + '-tab-2"><div class="content">';
+				content += '</div>';
 				
+				// tab2 - text content
+				content += '<div id="tab-2" class="tabcontent">';
+								
 				if(feature.properties.title){
 					content += '<strong>' + feature.properties.title + '</strong><br/>';
 				} else {
@@ -456,18 +444,12 @@ async function loadErosion() {
 				content += '<p>' + feature.properties.text + '</p>';
 
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 				}
 
-				content += '</div></div>';
-				
-				content += '<ul class="tabs-link">';					
-				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-1"><span><strong>Image</strong></span></a></li>';
-				content += '<li class="tab-link"> <a href="#erosion' + id + '-tab-2"><span><strong>Information</strong></span></a></li>';
-				
-				content += '</ul>';
 				content += '</div>';
-
+				/* Tab Content end here
+				*/
 			} else {
 				
 				if(feature.properties.title){
@@ -479,7 +461,7 @@ async function loadErosion() {
 					content += '<p>' + feature.properties.text + '</p>';
 				}
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 				}
 				if(feature.properties.img){
 					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
@@ -523,7 +505,7 @@ async function loadWaterLevel() {
 				content += '<p><strong><em>Source: <a href="https://mycoast.nahrim.gov.my/portal-main/photo-gallery-details?id=sealevelrise_malaysia" target="_blank">NAHRIM</a></em></strong></p>';
 			}
 			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 			}
 			layer.bindPopup(content);
 		},
@@ -545,25 +527,67 @@ async function loadFlooding() {
 	  var getpoints = L.geoJSON(data, {
 		style: {color: "red"},
 		onEachFeature: function (feature, layer) {
-			var content
+			var content;
+
 			if(feature.properties.name){
 				content = '<h3>' + feature.properties.name + '</h3>';
 			}
-			if(feature.properties.title){
-				content += '<strong>' + feature.properties.title + '</strong><br/>';
-			} else {
-				content += '<strong>Increased Flooding</strong><br/>';
-			}
-			if(feature.properties.text){
-				content += '<p>' + feature.properties.text + '</p>';
-			}
-			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
-			}
-			if(feature.properties.img){
+
+			if(feature.properties.text && feature.properties.img){
+
+				/* Tab Content start here
+				*/
+				content += '<div class="tabx">';
+				content += '<button class="tablinks active" onclick="openTab(event, \'tab-1\')">Image</button>';
+				content += '<button class="tablinks" onclick="openTab(event, \'tab-2\')">Information</button>';
+				content += '</div>';
+
+				// tab 1 - image content
+				content += '<div id="tab-1" class="tabcontent" style="display: block;">';
 				content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				content += '</div>';
+				
+				// tab2 - text content
+				content += '<div id="tab-2" class="tabcontent">';
+								
+				if(feature.properties.title){
+					content += '<strong>' + feature.properties.title + '</strong><br/>';
+				} else {
+					content += '<strong>Increased Flooding</strong><br/>';
+				}
+
+				content += '<p>' + feature.properties.text + '</p>';
+
+				if(feature.properties.link){
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Click here</a> to view current water level. <br/><br/><strong><em>Source: Public Infobanjir.</em></strong></p>';
+				}
+
+				content += '</div>';
+				/* Tab Content end here
+				*/
+				
+			} else {
+				
+				if(feature.properties.title){
+					content += '<strong>' + feature.properties.title + '</strong><br/>';
+				} else {
+					content += '<strong>Increased Flooding</strong><br/>';
+				}
+				if(feature.properties.text){
+					content += '<p>' + feature.properties.text + '</p>';
+				}
+				if(feature.properties.link){
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
+				}
+				if(feature.properties.img){
+					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
+				}	
+
 			}
-			layer.bindPopup(content);
+			layer.bindPopup(content, {
+				className: "flooding-popup",
+				maxWidth: "auto"
+			});	
 		},
 		pointToLayer: upIcon
 	});
@@ -573,7 +597,11 @@ async function loadFlooding() {
 	}
 }
 
-// replace Leaflet's default blue marker with a custom icon
+/*
+* iconEX
+* Replace Leaflet's default blue marker with a custom icon
+* https://github.com/mfhsieh/leaflet-iconex
+*/
 function waterIcon (feature, latlng) {
 	const iconEX = new L.IconEx({
 		contentHtml: `<i class="fas fa-water"></i>`,
@@ -594,9 +622,40 @@ function upIcon (feature, latlng) {
 
 function erosionIcon (feature, latlng) {
 	const iconEX = new L.IconEx({
-		contentHtml: `<i class="fas fa-holly-berry"></i>`,
-		iconFill: "#339933",
-		contentColor: "#339933",
+		// square
+		iconHtml: `
+<svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+<path stroke-width="1" d="m 2.5,0.5 c -1.107998,0 -2,0.892002 -2,2 v 27 c 0,1.107998 0.892002,2 2,2 h 4.7044922 a 4.1676656,4.1676656 24.095192 0 1 3.1064288,1.38926 L 16,39.25 21.68908,32.88926 A 4.1676657,4.1676657 155.90481 0 1 24.795508,31.5 H 29.5 c 1.107998,0 2,-0.892002 2,-2 v -27 c 0,-1.107998 -0.892002,-2 -2,-2 z" />
+</svg>`,
+		backgroundHtml: `
+<svg width="32" height="40" viewBox="0 0 32 40" xmlns="http://www.w3.org/2000/svg">
+<path stroke-width="0" d="M 5.5483871,4 C 4.6905822,4 4,4.6905822 4,5.5483871 V 26.451613 C 4,27.309418 4.6905822,28 5.5483871,28 h 3.6421875 a 3.2265798,3.2265798 0 0 1 2.4049774,1.075556 L 16,34 20.404449,29.075556 A 3.2265799,3.2265799 0 0 1 22.809426,28 h 3.642187 C 27.309418,28 28,27.309418 28,26.451613 V 5.5483871 C 28,4.6905822 27.309418,4 26.451613,4 Z" />
+</svg>`,
+		backgroundHtmlSize: [32, 40],
+		backgroundHtmlAnchor: [16, 20],
+		contentFontSize: 18,
+		contentHtml: `<i class="fas fa-wind"></i>`,
+		iconFill: "#a1a",
 	});
 	return L.marker(latlng, { icon: iconEX })
 }
+
+/*
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
+
+Tabs function
+*/
+
+function openTab(evt, id) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	  tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(id).style.display = "block";
+	evt.currentTarget.className += " active";
+  }
