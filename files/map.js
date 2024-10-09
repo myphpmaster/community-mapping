@@ -444,7 +444,7 @@ async function loadErosion() {
 				content += '<p>' + feature.properties.text + '</p>';
 
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 				}
 
 				content += '</div>';
@@ -461,7 +461,7 @@ async function loadErosion() {
 					content += '<p>' + feature.properties.text + '</p>';
 				}
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 				}
 				if(feature.properties.img){
 					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
@@ -505,7 +505,7 @@ async function loadWaterLevel() {
 				content += '<p><strong><em>Source: <a href="https://mycoast.nahrim.gov.my/portal-main/photo-gallery-details?id=sealevelrise_malaysia" target="_blank">NAHRIM</a></em></strong></p>';
 			}
 			if(feature.properties.link){
-				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+				content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 			}
 			layer.bindPopup(content);
 		},
@@ -559,7 +559,7 @@ async function loadFlooding() {
 				content += '<p>' + feature.properties.text + '</p>';
 
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Click here</a> to view current water level. <br/><br/> Source: Public Infobanjir.</p>';
 				}
 
 				content += '</div>';
@@ -577,7 +577,7 @@ async function loadFlooding() {
 					content += '<p>' + feature.properties.text + '</p>';
 				}
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Read more</a></p>';
 				}
 				if(feature.properties.img){
 					content += '<p><img src="' + feature.properties.img + '" width="100%" height="auto;"/></p>';
