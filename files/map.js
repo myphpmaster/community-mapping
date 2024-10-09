@@ -559,7 +559,7 @@ async function loadFlooding() {
 				content += '<p>' + feature.properties.text + '</p>';
 
 				if(feature.properties.link){
-					content += '<p><a href="' + feature.properties.link + '" target="_blank">Click here</a> to view current water level. <br/><br/> Source: Public Infobanjir.</p>';
+					content += '<p><a href="' + feature.properties.link + '" target="_blank">Click here</a> to view current water level. <br/><br/><strong><em>Source: Public Infobanjir.</em></strong></p>';
 				}
 
 				content += '</div>';
