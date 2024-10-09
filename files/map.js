@@ -273,7 +273,7 @@ async function initMap() {
    			imageLoadingBgUrl: 'https://openweathermap.org/img/w0/iwind.png' });
 	windrose.on('owmlayeradd', windroseAdded, windrose); // Add an event listener to get informed when windrose layer is ready
 
-	var useGeolocation = true;
+	var useGeolocation = false;
 	var zoom = 7;
 	var lat = 4.138;
 	var lon = 102.096;
